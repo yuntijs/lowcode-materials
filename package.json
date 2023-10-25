@@ -1,0 +1,58 @@
+{
+  "name": "lowcode-materials",
+  "version": "0.1.0",
+  "description": "Materials for low-code engine.",
+  "keywords": [
+    "low-code",
+    "low-code engine",
+    "antd",
+    "materials"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "dev:antd": "pnpm --filter '*-antd' dev",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "**/*.js?(x)": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.ts?(x)": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ],
+    "**/*.less": [
+      "stylelint --allow-empty-input --syntax less",
+      "prettier --write"
+    ],
+    "**/*.{md,json}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "eslint": "^8.45.0",
+    "eslint-config-tenx": "^4.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "prettier": "^2.8.0",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-tenx": "^2.1.0"
+  },
+  "authors": [
+    {
+      "name": "Carrotzpc",
+      "email": "zhang.pc3@gmail.com"
+    },
+    {
+      "name": "Jandiasnow",
+      "email": "88074479@qq.com"
+    }
+  ]
+}
