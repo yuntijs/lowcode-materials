@@ -21,7 +21,9 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
           label: '内容',
           tip: 'children | 内容',
         },
-        setter: ['TextAreaSetter'],
+        setter: {
+          componentName: 'TextAreaSetter',
+        },
       },
       {
         name: 'className',
@@ -29,7 +31,9 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
           label: '类名',
           tip: 'className | 类名',
         },
-        setter: ['StringSetter'],
+        setter: {
+          componentName: 'StringSetter',
+        },
       },
       {
         title: {

@@ -57,19 +57,19 @@
     {
       "id": "@tenx-ui/materials",
       "meta": {
-        "url": "http://172.22.96.37/@tenx-ui/materials@1.5.11/build/lowcode/meta.js",
+        "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
         "exportName": "TenxUiMaterialsMeta"
       },
       "urls": [
-        "http://172.22.96.37/@tenx-ui/materials@1.5.11/dist/TenxUiMaterials.js",
-        "http://172.22.96.37/@tenx-ui/materials@1.5.11/dist/TenxUiMaterials.css"
+        "http://172.22.96.37/@tenx-ui/materials@latest/dist/TenxUiMaterials.js",
+        "http://172.22.96.37/@tenx-ui/materials@latest/dist/TenxUiMaterials.css"
       ],
       "library": "TenxUiMaterials",
       "package": "@tenx-ui/materials",
-      "version": "1.5.11",
+      "version": "latest",
       "editUrls": [
-        "http://172.22.96.37/@tenx-ui/materials@1.5.11/build/lowcode/view.css",
-        "http://172.22.96.37/@tenx-ui/materials@1.5.11/build/lowcode/view.js"
+        "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/view.css",
+        "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/view.js"
       ]
     },
     {
@@ -95,11 +95,11 @@
   ],
   "components": [
     {
-      "url": "http://172.22.96.37/@tenx-ui/materials@1.5.11/build/lowcode/meta.js",
-      "version": "1.5.11",
+      "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
+      "version": "latest",
       "reference": {
         "id": "@tenx-ui/materials",
-        "version": "1.5.11"
+        "version": "latest"
       },
       "exportName": "TenxUiMaterialsMeta"
     },
