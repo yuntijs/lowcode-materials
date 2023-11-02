@@ -1,92 +1,42 @@
 {
   "name": "@yunti/react-markdown-lowcode-materials",
   "version": "0.1.0",
-  "description": "markdown",
+  "description": "react-markdown lowcode materials",
   "keywords": [
-    "ice",
+    "markdown",
     "react",
-    "component"
+    "lowcode"
   ],
-  "homepage": "https://unpkg.com/@tenx-ui/react-markdown-lowcode-materials@0.1.5/build/index.html",
   "license": "MIT",
-  "exports": {
-    "./*": "./*",
-    ".": {
-      "import": "./es/index.js",
-      "require": "./lib/index.js"
-    },
-    "./prototype": {
-      "require": "./lowcode_lib/meta.js",
-      "import": "./lowcode_es/meta.js"
-    },
-    "./prototypeView": {
-      "require": "./lowcode_lib/view.js",
-      "import": "./lowcode_es/view.js"
-    }
-  },
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
   "files": [
-    "demo/",
-    "es/",
-    "lib/",
-    "build/",
-    "dist/",
-    "lowcode/",
-    "lowcode_lib/",
-    "lowcode_es/"
+    "dist",
+    "compiled"
   ],
   "scripts": {
-    "build": "build-scripts build",
-    "lowcode:build": "build-scripts build --config ./build.lowcode.js",
-    "lowcode:dev": "build-scripts start --config ./build.lowcode.js",
-    "prepublishOnly": "npm run build && npm run lowcode:build",
-    "start": "build-scripts start"
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "dev": "cross-env NODE_ENV=development father dev",
+    "prepublishOnly": "father doctor && npm run build"
   },
   "dependencies": {
+    "@alilc/lowcode-types": "^1.2.1",
     "@babel/runtime": "^7.0.0",
     "react-markdown": "^9.0.0",
     "remark-gfm": "^4.0.0"
   },
-  "devDependencies": {
-    "@alib/build-scripts": "^0.1.32",
-    "@alifd/build-plugin-lowcode": "^0.4.0",
-    "@alilc/lowcode-react-renderer": "^1.2.0",
-    "@alilc/lowcode-utils": "^1.2.0",
-    "@types/react": "^16.9.13",
-    "@types/react-dom": "^16.9.4",
-    "build-plugin-component": "^1.0.0",
-    "build-plugin-fusion": "^0.1.0",
-    "build-plugin-moment-locales": "^0.1.0",
-    "f2elint": "^1.2.0",
-    "react": "^16.x",
-    "react-dom": "^16.x",
-    "style-loader": "^2.0.0",
-    "template-component-demo": "^2.0.3"
-  },
   "peerDependencies": {
     "lodash": "^4.17.21",
     "moment": "latest",
-    "react": "^16.x",
-    "react-dom": "^16.x"
+    "react": "16.x || 17.x",
+    "react-dom": "16.x || 17.x"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "componentConfig": {
-    "name": "ReactMarkdown",
-    "materialSchema": "https://unpkg.com/@tenx-ui/react-markdown-lowcode-materials@0.1.5/build/lowcode/assets-prod.json"
-  },
-  "lcMeta": {
-    "type": "component"
-  },
-  "stylePath": "style.js",
   "yunti": {
     "umd": {
-      "library": "YuntiReactMarkdownLowcodeMaterials",
+      "library": "ReactMarkdownLowcode",
       "entry": [
-        "/dist/YuntiReactMarkdownLowcodeMaterials.js",
-        "/dist/YuntiReactMarkdownLowcodeMaterials.css"
+        "/dist/umd/index.min.js"
       ],
       "externals": {
         "react": ">=16.9.0",
@@ -94,10 +44,9 @@
       }
     },
     "lowCode": {
-      "meta": "/build/lowcode/meta.js",
+      "meta": "/dist/umd/meta.min.js",
       "editEntry": [
-        "/build/lowcode/view.css",
-        "/build/lowcode/view.js"
+        "/dist/umd/view.min.js"
       ]
     }
   }

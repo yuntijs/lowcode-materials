@@ -1,0 +1,137 @@
+{
+  "version": "1.1.0",
+  "packages": [
+    {
+      "id": "dayjs",
+      "urls": ["http://172.22.96.37/dayjs@1.11.6/dayjs.min.js"],
+      "library": "dayjs",
+      "package": "dayjs",
+      "version": "1.11.6",
+      "editUrls": ["http://172.22.96.37/dayjs@1.11.6/dayjs.min.js"]
+    },
+    {
+      "id": "antd",
+      "meta": {},
+      "urls": [
+        "https://jsd.onmicrosoft.cn/npm/antd@5.9.4/dist/antd.min.js",
+        "https://jsd.onmicrosoft.cn/npm/antd@5.9.4/dist/reset.min.css"
+      ],
+      "library": "antd",
+      "package": "antd",
+      "version": "5.9.4",
+      "editUrls": null
+    },
+    {
+      "id": "@ant-design/icons",
+      "urls": ["//g.alicdn.com/code/npm/@ali/ant-design-icons-cdn/4.5.0/index.umd.min.js"],
+      "library": "icons",
+      "package": "@ant-design/icons",
+      "version": "4.7.0"
+    },
+    {
+      "id": "@alifd/next",
+      "urls": [
+        "https://g.alicdn.com/legao-comp/web_bundle_0724/@alife/theme-254/1.29.5/@alifd/next/1.24.18/theme.7c897c2.css",
+        "https://g.alicdn.com/legao-comp/web_bundle_0724/@alifd/next/1.24.18/main.059bccd.js"
+      ],
+      "library": "Next",
+      "package": "@alifd/next",
+      "version": "1.24.18"
+    },
+    {
+      "id": "moment",
+      "urls": ["https://g.alicdn.com/mylib/moment/2.24.0/min/moment.min.js"],
+      "library": "moment",
+      "package": "moment",
+      "version": "2.24.0"
+    },
+    {
+      "id": "lodash",
+      "meta": null,
+      "urls": ["https://jsd.onmicrosoft.cn/npm/lodash@4.17.21/lodash.min.js"],
+      "library": "_",
+      "package": "lodash",
+      "version": "4.17.21",
+      "editUrls": null
+    },
+    {
+      "id": "@tenx-ui/materials",
+      "meta": {
+        "url": "http://172.22.96.37/@tenx-ui/materials@1.5.9/build/lowcode/meta.js",
+        "exportName": "TenxUiMaterialsMeta"
+      },
+      "urls": [
+        "http://172.22.96.37/@tenx-ui/materials@1.5.9/dist/TenxUiMaterials.js",
+        "http://172.22.96.37/@tenx-ui/materials@1.5.9/dist/TenxUiMaterials.css"
+      ],
+      "library": "TenxUiMaterials",
+      "package": "@tenx-ui/materials",
+      "version": "1.5.9",
+      "editUrls": [
+        "http://172.22.96.37/@tenx-ui/materials@1.5.9/build/lowcode/view.css",
+        "http://172.22.96.37/@tenx-ui/materials@1.5.9/build/lowcode/view.js"
+      ]
+    },
+    {
+      "meta": {
+        "url": "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
+        "exportName": "TenxUiIconMaterialsMeta"
+      },
+      "urls": [
+        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/dist/TenxUiIconMaterials.js",
+        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/dist/TenxUiIconMaterials.css"
+      ],
+      "library": "TenxUiIconMaterials",
+      "package": "@tenx-ui/icon-materials",
+      "version": "0.1.5",
+      "editUrls": [
+        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/view.css",
+        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/view.js"
+      ],
+      "id": "@tenx-ui/icon-materials"
+    },
+    {
+      "id": "@tenx-ui/auth-utils",
+      "meta": {},
+      "urls": ["http://172.22.96.37/@tenx-ui/auth-utils@0.0.2/dist/umd/auth-utils.min.js"],
+      "library": "authUtils",
+      "package": "@tenx-ui/auth-utils",
+      "version": "0.0.2",
+      "editUrls": null
+    }
+  ],
+  "components": [
+    {
+      "url": "http://172.22.96.37/@tenx-ui/materials@1.5.9/build/lowcode/meta.js",
+      "version": "1.5.9",
+      "reference": {
+        "id": "@tenx-ui/materials",
+        "version": "1.5.9"
+      },
+      "exportName": "TenxUiMaterialsMeta"
+    },
+    {
+      "url": "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
+      "version": "0.1.5",
+      "reference": {
+        "id": "@tenx-ui/icon-materials",
+        "version": "0.1.5"
+      },
+      "exportName": "TenxUiIconMaterialsMeta"
+    }
+  ],
+  "sort": {
+    "groupList": ["容器/布局", "组件", "表单", "图表组件", "图标", "低码组件"],
+    "categoryList": [
+      "基础组件",
+      "输入组件",
+      "布局组件",
+      "容器组件",
+      "数据组件",
+      "其他",
+      "formily 表单容器",
+      "formily 表单组件",
+      "业务组件"
+    ]
+  }
+}

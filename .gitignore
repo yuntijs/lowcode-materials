@@ -14,3 +14,8 @@ dist
 .history/
 
 .idea/
+
+.dumi/tmp*
+
+public/
+!public/img

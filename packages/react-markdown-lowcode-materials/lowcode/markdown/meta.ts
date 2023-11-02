@@ -1,27 +1,27 @@
 import { IPublicTypeComponentMetadata, IPublicTypeSnippet } from '@alilc/lowcode-types';
 
 const MarkdownMeta: IPublicTypeComponentMetadata = {
-  "componentName": "YuntiReactMarkdownLowcodeMaterials",
-  "title": "Markdown",
-  "devMode": "proCode",
+  componentName: 'ReactMarkdownLowcode',
+  title: 'Markdown',
+  devMode: 'proCode',
   group: '容器/布局',
   category: '容器组件',
-  "npm": {
-    "package": "@yunti/react-markdown-lowcode-materials",
-    "version": "0.1.0",
-    "exportName": "default",
-    "destructuring": false,
-    "subName": ""
+  npm: {
+    package: '@yunti/react-markdown-lowcode-materials',
+    version: '0.1.0',
+    exportName: 'default',
+    destructuring: false,
+    subName: '',
   },
-  "configure": {
-    "props": [
+  configure: {
+    props: [
       {
         name: 'children',
         title: {
           label: '内容',
           tip: 'children | 内容',
         },
-        setter: ['StringSetter'],
+        setter: ['TextAreaSetter'],
       },
       {
         name: 'className',
@@ -621,21 +621,24 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
     component: {},
   },
 };
+
 const snippets: IPublicTypeSnippet[] = [
   {
     title: 'Markdown',
     screenshot: '',
     schema: {
-      componentName: 'TenxUiReactMarkdownLowcodeMaterials',
+      componentName: 'ReactMarkdownLowcode',
       props: {
-        __component_name: 'TenxUiReactMarkdownLowcodeMaterials',
+        __component_name: 'ReactMarkdownLowcode',
         children: '#### 标题',
       },
     },
   },
 ];
 
-export default {
+const meta = {
   ...MarkdownMeta,
   snippets,
 };
+
+export default meta;

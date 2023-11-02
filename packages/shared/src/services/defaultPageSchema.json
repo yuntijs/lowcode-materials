@@ -1,0 +1,30 @@
+{
+  "componentName": "Page",
+  "id": "page-1",
+  "meta": {
+    "title": "page-1",
+    "router": "/page-1"
+  },
+  "fileName": "Page1",
+  "props": {},
+  "state": {},
+  "css": "body {\n  font-size: 12px;\n}\n",
+  "lifeCycles": {
+    "componentDidMount": {
+      "type": "JSFunction",
+      "value": "function componentDidMount() {\n  console.log('did mount');\n}",
+      "source": "function componentDidMount() {\n  console.log('did mount');\n}"
+    },
+    "componentWillUnmount": {
+      "type": "JSFunction",
+      "value": "function componentWillUnmount() {\n  console.log('will unmount');\n}",
+      "source": "function componentWillUnmount() {\n  console.log('will unmount');\n}"
+    }
+  },
+  "methods": {},
+  "hidden": false,
+  "title": "",
+  "isLocked": false,
+  "condition": true,
+  "conditionGroup": ""
+}
