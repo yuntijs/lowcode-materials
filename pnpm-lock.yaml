@@ -95,6 +95,9 @@ importers:
       react-markdown:
         specifier: ^9.0.0
         version: 9.0.0(@types/react@18.2.33)(react@17.0.2)
+      rehype-highlight:
+        specifier: ^7.0.0
+        version: 7.0.0
       remark-gfm:
         specifier: ^4.0.0
         version: 4.0.0
@@ -10573,6 +10576,12 @@ packages:
       '@types/unist': 2.0.9
     dev: true
 
+  /hast-util-is-element@3.0.0:
+    resolution: {integrity: sha512-Val9mnv2IWpLbNPqc/pUem+a7Ipj2aHacCwgNfTiK0vJKl0LF+4Ba4+v1oPHFpf3bLYmreq0/l3Gud9S5OH42g==}
+    dependencies:
+      '@types/hast': 3.0.2
+    dev: false
+
   /hast-util-parse-selector@3.1.1:
     resolution: {integrity: sha512-jdlwBjEexy1oGz0aJ2f4GKMaVKkA9jwjr4MjAAI22E5fM/TXVZHuS5OpONtdeIkRKqAaryQ2E9xNQxijoThSZA==}
     dependencies:
@@ -10681,6 +10690,15 @@ packages:
       '@types/hast': 2.3.7
     dev: true
 
+  /hast-util-to-text@4.0.0:
+    resolution: {integrity: sha512-EWiE1FSArNBPUo1cKWtzqgnuRQwEeQbQtnFJRYV1hb1BWDgrAlBU0ExptvZMM/KSA82cDpm2sFGf3Dmc5Mza3w==}
+    dependencies:
+      '@types/hast': 3.0.2
+      '@types/unist': 3.0.1
+      hast-util-is-element: 3.0.0
+      unist-util-find-after: 5.0.0
+    dev: false
+
   /hast-util-whitespace@2.0.1:
     resolution: {integrity: sha512-nAxA0v8+vXSBDt3AnRUNjyRIQ0rD+ntpbAp4LnPkumc5M9yUbSMa4XDU9Q6etY4f1Wp4bNgvc1yjiZtsTTrSng==}
     dev: true
@@ -10722,6 +10740,11 @@ packages:
     dependencies:
       heti-findandreplacedomtext: 0.5.0
     dev: true
+
+  /highlight.js@11.9.0:
+    resolution: {integrity: sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==}
+    engines: {node: '>=12.0.0'}
+    dev: false
 
   /history@5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
@@ -12450,6 +12473,14 @@ packages:
     resolution: {integrity: sha1-b54wtHCE2XGnyCD/FabFFnt0wm8=}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /lowlight@3.1.0:
+    resolution: {integrity: sha512-CEbNVoSikAxwDMDPjXlqlFYiZLkDJHwyGu/MfOsJnF3d7f3tds5J3z8s/l9TMXhzfsJCCJEAsD78842mwmg0PQ==}
+    dependencies:
+      '@types/hast': 3.0.2
+      devlop: 1.1.0
+      highlight.js: 11.9.0
+    dev: false
 
   /lru-cache@4.1.5:
     resolution: {integrity: sha1-i75Q6oW+1ZvJ4z3KuCNe6bz0Q80=}
@@ -17304,6 +17335,16 @@ packages:
       unist-util-visit: 4.1.2
     dev: true
 
+  /rehype-highlight@7.0.0:
+    resolution: {integrity: sha512-QtobgRgYoQaK6p1eSr2SD1i61f7bjF2kZHAQHxeCHAuJf7ZUDMvQ7owDq9YTkmar5m5TSUol+2D3bp3KfJf/oA==}
+    dependencies:
+      '@types/hast': 3.0.2
+      hast-util-to-text: 4.0.0
+      lowlight: 3.1.0
+      unist-util-visit: 5.0.0
+      vfile: 6.0.1
+    dev: false
+
   /rehype-remove-comments@5.0.0:
     resolution: {integrity: sha1-iLT6uhDyF9SraLNuuVizhmMNVnI=}
     dependencies:
@@ -19422,6 +19463,13 @@ packages:
       unist-util-is: 5.2.1
       unist-util-visit-parents: 5.1.3
     dev: true
+
+  /unist-util-find-after@5.0.0:
+    resolution: {integrity: sha512-amQa0Ep2m6hE2g72AugUItjbuM8X8cGQnFoHk0pGfrFeT9GZhzN5SW8nRsiGKK7Aif4CrACPENkA6P/Lw6fHGQ==}
+    dependencies:
+      '@types/unist': 3.0.1
+      unist-util-is: 6.0.0
+    dev: false
 
   /unist-util-find-all-after@3.0.2:
     resolution: {integrity: sha1-/f7NFMW3rqXp7zjV4NX3dO61YfY=}

@@ -1,11 +1,15 @@
 import React from 'react';
 import OriginalMarkdown, { Options } from 'react-markdown';
+import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
-
 const Markdown = (props: Options) => {
-  const { children, remarkPlugins, ...otherProps } = props;
+  const { children, rehypePlugins, remarkPlugins, ...otherProps } = props;
   return (
-    <OriginalMarkdown {...otherProps} remarkPlugins={[remarkGfm, ...(remarkPlugins || [])]}>
+    <OriginalMarkdown
+      {...otherProps}
+      rehypePlugins={[rehypeHighlight, ...(rehypePlugins || [])]}
+      remarkPlugins={[remarkGfm, ...(remarkPlugins || [])]}
+    >
       {(props.children || '').toString()}
     </OriginalMarkdown>
   );
