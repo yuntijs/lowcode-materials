@@ -14,6 +14,6 @@ features:
     description: markdown 低码资产
   - emoji: 🚀
     title: ant design
-    # link: /lowcode-materials/antd-lowcode-materials
-    description: antd 低码资产 (开发中)
+    link: /lowcode-materials/yunti-ui-lowcode-materials
+    description: yunti-ui 低码资产 (开发中)
 ---

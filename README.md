@@ -74,8 +74,8 @@ ni
 # 开发文档
 nr dev
 
-# 开发 antd
-nr dev:antd
+# 开发 yunti-ui
+nr dev:yunti-ui
 
 # 开发 react-markdown
 nr dev:markdown

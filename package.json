@@ -5,15 +5,15 @@
   "keywords": [
     "low-code",
     "low-code engine",
-    "antd",
+    "yunti-ui",
     "materials"
   ],
   "license": "ISC",
   "scripts": {
     "build": "dumi build",
     "dev": "dumi dev",
-    "dev:antd": "concurrently \"pnpm --filter 'antd-*' dev\" \"npm run dev\"",
     "dev:markdown": "concurrently \"pnpm --filter 'react-markdown-*' dev\" \"npm run dev\"",
+    "dev:yunti-ui": "concurrently \"pnpm --filter 'yunti-ui-*' dev\" \"npm run dev\"",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
