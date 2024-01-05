@@ -51,6 +51,6 @@ jobs:
 
       - name: Sync to cnpm
         run: /
-          npm install -g cnpm && \
-          cnpm sync @yuntijs/react-markdown-lowcode-materials && \
+          npm install -g cnpm
+          cnpm sync @yuntijs/react-markdown-lowcode-materials
           cnpm sync @yuntijs/ui-lowcode-materials

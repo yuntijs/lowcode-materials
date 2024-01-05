@@ -31,6 +31,10 @@
     "react": "16.x || 17.x",
     "react-dom": "16.x || 17.x"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "yunti": {
     "umd": {
       "library": "YuntiUiLowcode",

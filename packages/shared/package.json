@@ -34,5 +34,9 @@
     "@yunti/lowcode-plugin-code-generator": "^2.1.1",
     "antd": "^5.10.3",
     "lodash": "^4.17.21"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
