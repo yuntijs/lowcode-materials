@@ -30,6 +30,10 @@ jobs:
         with:
           version: 8
 
+      - name: setting token of private npm registry
+        run: |
+          npm set //dev-npm.tenxcloud.net/:_authToken="${{ secrets.PRIVATE_NPM_TOKEN }}"
+
       - name: Install deps
         run: pnpm i
 
@@ -46,4 +50,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Sync to cnpm
-        run: npm install -g cnpm && cnpm sync @yuntijs/lint
+        run: /
+          npm install -g cnpm && \
+          cnpm sync @yuntijs/react-markdown-lowcode-materials && \
+          cnpm sync @yuntijs/ui-lowcode-materials
