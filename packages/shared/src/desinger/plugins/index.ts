@@ -83,7 +83,7 @@ async function registerPlugins(scenarioName: string, displayName: string, assets
   await plugins.register(PluginCodeGen, {
     solution: 'umi',
     workerJsUrl:
-      'http://172.22.96.37/@yunti/lowcode-code-generator@2.2.1/dist/standalone-worker.min.js',
+      'http://172.22.96.37/@yunti/lowcode-code-generator@2.4.0/dist/standalone-worker.min.js',
   });
 
   await plugins.register(SaveSamplePlugin);

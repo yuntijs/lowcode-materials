@@ -9,7 +9,7 @@ const pkgList = readdirSync(join(__dirname, 'packages')).filter(
   pkg => !pkg.includes('.') && !headPkgList.includes(pkg)
 );
 const alias = pkgList.reduce((pre, pkg) => {
-  pre[`@yunti/${pkg}`] = join(__dirname, 'packages', pkg, 'src');
+  pre[`@yuntijs/${pkg}`] = join(__dirname, 'packages', pkg, 'src');
   return {
     ...pre,
   };

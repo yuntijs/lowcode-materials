@@ -14,12 +14,12 @@ importers:
       '@types/react-dom':
         specifier: ^17
         version: 17.0.22
-      '@yuntijs/lowcode-materials-shared':
-        specifier: workspace:^
-        version: link:packages/shared
       '@yuntijs/lint':
         specifier: ^1.5.1
         version: 1.5.1(@octokit/core@3.6.0)(eslint@8.52.0)(postcss@8.4.33)(prettier@3.1.1)(semantic-release@21.1.2)(styled-components@6.1.0)(stylelint@15.11.0)(typescript@5.2.2)
+      '@yuntijs/lowcode-materials-shared':
+        specifier: workspace:^
+        version: link:packages/shared
       commitlint:
         specifier: ^18
         version: 18.4.4(@types/node@20.5.1)(typescript@5.2.2)
@@ -122,9 +122,6 @@ importers:
       '@alilc/lowcode-plugin-code-editor':
         specifier: ^1.0.3
         version: 1.0.9(@alifd/meet-react@2.9.6)(moment@2.30.1)(monaco-editor@0.44.0)
-      '@alilc/lowcode-plugin-code-generator':
-        specifier: ^1.0.4
-        version: 1.0.6(@alilc/lowcode-engine@1.2.1)(@babel/core@7.23.2)(monaco-editor@0.44.0)(react@16.14.0)
       '@alilc/lowcode-plugin-components-pane':
         specifier: latest
         version: 2.0.4
@@ -367,55 +364,6 @@ packages:
     resolution: {integrity: sha512-ggSBfpl3H8M2OEM95zC9NQc4cBvne/Eq4mTHZHWtqYI/6Vnz0k1fGx3hnYsdGu3c3hF4l6sUDPulactM6lSXtA==}
     dev: true
 
-  /@alilc/lowcode-code-generator@1.1.6(@babel/core@7.23.2):
-    resolution: {integrity: sha512-v9PvAiYo/K34Y9h3gBJpseRg/Jb08lQDq6vcv7cLW3Ib8qF5FWh7TF3zz0y7Zw+4yVO+jnsLVfytc3v13SAhDA==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    dependencies:
-      '@alilc/lowcode-types': 1.2.1
-      '@babel/generator': 7.23.0
-      '@babel/parser': 7.23.0
-      '@babel/runtime': 7.23.2
-      '@babel/traverse': 7.23.2
-      '@babel/types': 7.23.0
-      '@types/debug': 4.1.10
-      '@types/fs-extra': 9.0.13
-      '@types/glob': 7.2.0
-      '@types/lodash': 4.14.200
-      '@types/node-fetch': 2.6.8
-      '@types/qs': 6.9.9
-      '@types/semver': 7.5.4
-      babel-jest: 26.6.3(@babel/core@7.23.2)
-      buffer: 6.0.3
-      chalk: 4.1.2
-      change-case: 3.1.0
-      commander: 6.2.1
-      debug: 4.3.4
-      fp-ts: 2.16.1
-      fs-extra: 9.1.0
-      glob: 7.2.3
-      html-entities: 2.4.0
-      json5: 2.2.3
-      jsonc: 2.0.0
-      jszip: 3.10.1
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      mock-fs: 5.2.0
-      moment: 2.29.4
-      nanomatch: 1.2.13
-      node-fetch: 2.7.0
-      path-browserify: 1.0.1
-      prettier: 2.8.8
-      qs: 6.11.2
-      semver: 7.5.4
-      short-uuid: 3.1.1
-      tslib: 2.6.2
-    transitivePeerDependencies:
-      - '@babel/core'
-      - encoding
-      - supports-color
-    dev: true
-
   /@alilc/lowcode-datasource-engine@1.1.4:
     resolution: {integrity: sha512-gQ5vjFvdhpzb8IeNnZWjqWqWbRQWtfHDGsXrz//Lkoy0OCguaKuwt0kMGyDy1B5Bbde1fLJQo3vLkQ01wwDYGg==}
     dependencies:
@@ -604,34 +552,6 @@ packages:
     transitivePeerDependencies:
       - '@alifd/meet-react'
       - moment
-      - monaco-editor
-      - supports-color
-    dev: true
-
-  /@alilc/lowcode-plugin-code-generator@1.0.6(@alilc/lowcode-engine@1.2.1)(@babel/core@7.23.2)(monaco-editor@0.44.0)(react@16.14.0):
-    resolution: {integrity: sha512-skrOTbdoMAAxYgpDP9Pn3/Pd5Lq1a8fxsfmc1mt+lkLccSIwyGSRw522lAzLyGk326nADRZdCvjobnWstfqgNQ==}
-    peerDependencies:
-      '@alilc/lowcode-engine': ^1.0.0
-      react: 16.x || 17.x
-    dependencies:
-      '@alilc/lowcode-code-generator': 1.1.6(@babel/core@7.23.2)
-      '@alilc/lowcode-engine': 1.2.1(@alifd/meet-react@2.9.6)(moment@2.30.1)(monaco-editor@0.44.0)
-      '@alilc/lowcode-plugin-base-monaco-editor': 1.1.2(monaco-editor@0.44.0)
-      '@alilc/lowcode-types': 1.2.1
-      '@types/file-saver': 2.0.6
-      '@types/js-base64': 3.3.1
-      '@types/string-natural-compare': 3.0.3
-      codesandbox: 2.2.3
-      file-saver: 2.0.5
-      js-base64: 3.7.5
-      jszip: 3.10.1
-      react: 16.14.0
-      semver: 7.5.4
-      string-natural-compare: 3.0.1
-      tslib: 2.6.2
-    transitivePeerDependencies:
-      - '@babel/core'
-      - encoding
       - monaco-editor
       - supports-color
     dev: true
@@ -6033,10 +5953,6 @@ packages:
     resolution: {integrity: sha512-2JwWnHK9H+wUZNorf2Zr6ves96WHoWDJIftkcxPKsS7Djta6Zu519LarhRNljPXkpsZR2ZMwNCPeW7omW07BJw==}
     dev: true
 
-  /@types/file-saver@2.0.6:
-    resolution: {integrity: sha512-Mw671DVqoMHbjw0w4v2iiOro01dlT/WhWp5uwecBa0Wg8c+bcZOjgF1ndBnlaxhtvFCgTRBtsGivSVhrK/vnag==}
-    dev: true
-
   /@types/fs-extra@11.0.1:
     resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
     dependencies:
@@ -6107,13 +6023,6 @@ packages:
     resolution: {integrity: sha512-1nESsePMBlf0RPRffLZi5ujYh7IH1BWL4y9pr+Bn3cJBdxz+RTP8bUFljLz9HvzhhOSWKdyBZ4DIivdL6rvgZg==}
     dependencies:
       '@types/istanbul-lib-report': 3.0.2
-    dev: true
-
-  /@types/js-base64@3.3.1:
-    resolution: {integrity: sha512-Zw33oQNAvDdAN9b0IE5stH0y2MylYvtU7VVTKEJPxhyM2q57CVaNJhtJW258ah24NRtaiA23tptUmVn3dmTKpw==}
-    deprecated: This is a stub types definition. js-base64 provides its own type definitions, so you do not need this installed.
-    dependencies:
-      js-base64: 3.7.5
     dev: true
 
   /@types/js-cookie@2.2.7:
@@ -6285,10 +6194,6 @@ packages:
 
   /@types/semver@7.5.4:
     resolution: {integrity: sha512-MMzuxN3GdFwskAnb6fz0orFvhfqi752yjaXylr0Rp4oDg5H0Zn1IuyRhDVvYOwAXoJirx2xuS16I3WjxnAIHiQ==}
-    dev: true
-
-  /@types/string-natural-compare@3.0.3:
-    resolution: {integrity: sha512-ksHtBvtXYfTAyb4vWkrnHNgHI9YkCh6du89UgaFYcKK2pPDTdu9K/qNoXgpRmT4WDAHTqHVOH6/toopdJArqUg==}
     dev: true
 
   /@types/stylis@4.2.2:
