@@ -50,7 +50,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Sync to cnpm
-        run: /
+        run: |
           npm install -g cnpm
           cnpm sync @yuntijs/react-markdown-lowcode-materials
           cnpm sync @yuntijs/ui-lowcode-materials
