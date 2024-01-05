@@ -1,0 +1,52 @@
+{
+  "name": "@yunti/yunti-ui-lowcode-materials",
+  "version": "0.1.0",
+  "description": "yunti-ui lowcode materials",
+  "keywords": [
+    "yunti-ui",
+    "react",
+    "lowcode"
+  ],
+  "license": "MIT",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "dev": "cross-env NODE_ENV=development father dev",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "dependencies": {
+    "@alilc/lowcode-types": "^1.2.1",
+    "@babel/runtime": "^7.0.0",
+    "@yuntijs/ui": "v1.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.21",
+    "moment": "latest",
+    "react": "16.x || 17.x",
+    "react-dom": "16.x || 17.x"
+  },
+  "yunti": {
+    "umd": {
+      "library": "YuntiUiLowcode",
+      "entry": [
+        "/dist/umd/index.min.js"
+      ],
+      "externals": {
+        "react": ">=16.9.0",
+        "lodash": ">=4.17.21"
+      }
+    },
+    "lowCode": {
+      "meta": "/dist/umd/meta.min.js",
+      "editEntry": [
+        "/dist/umd/view.min.js"
+      ]
+    }
+  }
+}
