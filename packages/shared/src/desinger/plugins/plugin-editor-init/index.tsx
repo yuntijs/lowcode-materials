@@ -1,5 +1,6 @@
 import { injectAssets } from '@alilc/lowcode-plugin-inject';
 import { IPublicModelPluginContext } from '@alilc/lowcode-types';
+
 import assets from '../../../services/assets.json';
 import { getProjectSchema } from '../../../services/mockService';
 

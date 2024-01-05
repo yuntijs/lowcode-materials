@@ -2,6 +2,7 @@ import { Dialog, Message } from '@alifd/next';
 import { material, project } from '@alilc/lowcode-engine';
 import { filterPackages } from '@alilc/lowcode-plugin-inject';
 import { IPublicEnumTransformStage, IPublicTypeProjectSchema } from '@alilc/lowcode-types';
+
 import DefaultI18nSchema from './defaultI18nSchema.json';
 import DefaultPageSchema from './defaultPageSchema.json';
 
@@ -33,7 +34,7 @@ export const resetSchema = async (scenarioName: string = 'unknown') => {
         },
       });
     });
-  } catch (err) {
+  } catch {
     return;
   }
   const defaultSchema = generateProjectSchema(DefaultPageSchema, DefaultI18nSchema);
@@ -58,7 +59,7 @@ export const getProjectSchemaFromLocalStorage = (scenarioName: string) => {
   if (localValue) {
     return JSON.parse(localValue);
   }
-  return undefined;
+  return;
 };
 
 const setProjectSchemaToLocalStorage = (scenarioName: string) => {

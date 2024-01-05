@@ -1,6 +1,6 @@
 {
-  "compileOnSave": false,
   "buildOnSave": false,
+  "compileOnSave": false,
   "compilerOptions": {
     "outDir": "build",
     "module": "esnext",
@@ -17,6 +17,6 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/*.ts", "src/*.tsx"],
-  "exclude": ["node_modules", "build", "public"]
+  "exclude": ["node_modules", "build", "public"],
+  "include": ["src/*.ts", "src/*.tsx"]
 }

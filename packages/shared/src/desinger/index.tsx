@@ -1,6 +1,7 @@
 import { common, skeleton } from '@alilc/lowcode-engine';
 import { Spin, message } from 'antd';
 import React, { useEffect, useState } from 'react';
+
 import { appHelper, initPlugins } from '../utils';
 import './index.less';
 import registerPlugins from './plugins';
@@ -39,8 +40,8 @@ export const Designer: React.FC<DesignerProps> = ({ scenarioName, displayName, a
         await registerPlugins(scenarioName, displayName, assets);
         await initPlugins({ appHelper, registerOptions: preference });
         setIsInited(PluginIsInited.initialized);
-      } catch (err) {
-        console.warn(err);
+      } catch (error) {
+        console.warn(error);
         message.error('插件初始化失败');
       }
     }

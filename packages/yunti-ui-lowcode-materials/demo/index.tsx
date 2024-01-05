@@ -2,12 +2,13 @@
  * iframe: true
  * compact: true
  */
-import { Designer } from '@yunti/shared';
+import { Designer } from '@yuntijs/lowcode-materials-shared';
 import React from 'react';
+
 import assets from './assets.json';
 
 const DesignerDemo = () => (
-  <Designer scenarioName="yunti-ui" displayName="yunti-ui" assets={assets} />
+  <Designer assets={assets} displayName="yunti-ui" scenarioName="yunti-ui" />
 );
 
 export default DesignerDemo;

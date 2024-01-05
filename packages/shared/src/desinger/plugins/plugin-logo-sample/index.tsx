@@ -1,5 +1,6 @@
 import { IPublicModelPluginContext } from '@alilc/lowcode-types';
 import React from 'react';
+
 // import { Dropdown, Menu } from '@alifd/next';
 import { PUBLIC_PATH } from '../../../../../../constants';
 import './index.less';
@@ -16,7 +17,7 @@ const Logo: React.FC<IProps> = props => {
   // const urls = scenarioInfo?.urls || [];
   return (
     <div className="lowcode-plugin-logo">
-      <a className="logo" target="blank" href={props.href || '/'}>
+      <a className="logo" href={props.href || '/'} target="blank">
         <img alt="logo" src={props.logo} />
       </a>
       <div className="scenario-name">{scenarioDisplayName}</div>

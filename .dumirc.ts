@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 import { readdirSync } from 'fs';
 import { join } from 'path';
+
 import { PUBLIC_PATH } from './constants';
 
 const headPkgList: string[] = [];
@@ -52,10 +53,10 @@ export default defineConfig({
     },
   },
   externals: {
-    react: 'var window.React',
+    'react': 'var window.React',
     'react-dom': 'var window.ReactDOM',
     'prop-types': 'var window.PropTypes',
-    lodash: 'var window._',
+    'lodash': 'var window._',
     // 以下仅 /~demos 开头的设计页面可用
     '@alifd/next': 'var window.Next',
     '@alilc/lowcode-engine': 'var window.AliLowCodeEngine',
@@ -64,7 +65,7 @@ export default defineConfig({
     '@alilc/lowcode-designer': 'var window.AliLowCodeEngine.common.designerCabin',
     '@alilc/lowcode-engine-ext': 'var window.AliLowCodeEngineExt',
     '@ali/lowcode-engine': 'var window.AliLowCodeEngine',
-    moment: 'var window.moment',
+    'moment': 'var window.moment',
   },
   headScripts: [
     'https://g.alicdn.com/code/lib/prop-types/15.7.2/prop-types.js',

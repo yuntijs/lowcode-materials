@@ -14,10 +14,10 @@ const LocaleSelect: React.FC<IProps> = (props): React.ReactElement => {
   return (
     <div className="lowcode-plugin-simulator-locale-select">
       <Select
+        aria-label="切换画布区域 locale"
+        defaultValue={currentLocaleValue}
         id="select"
         onChange={onChange}
-        defaultValue={currentLocaleValue}
-        aria-label="切换画布区域 locale"
         style={{ marginRight: 8 }}
       >
         <Option value="zh-CN">中文</Option>

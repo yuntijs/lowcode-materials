@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Markdown from '../src';
 
 // 不需要对设计态进行特殊处理的，直接导出即可
@@ -14,7 +15,7 @@ const DesignMarkdown = props => {
             const { href, ...rest } = props;
             return <a {...rest} />;
           },
-          ...(otherProps.components || {}),
+          ...otherProps.components,
         }}
       >
         {(children || '').toString()}

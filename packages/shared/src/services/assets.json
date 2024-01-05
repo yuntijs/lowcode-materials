@@ -1,5 +1,24 @@
 {
-  "version": "1.1.0",
+  "components": [
+    {
+      "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
+      "version": "latest",
+      "reference": {
+        "id": "@tenx-ui/materials",
+        "version": "latest"
+      },
+      "exportName": "TenxUiMaterialsMeta"
+    },
+    {
+      "url": "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
+      "version": "0.1.5",
+      "reference": {
+        "id": "@tenx-ui/icon-materials",
+        "version": "0.1.5"
+      },
+      "exportName": "TenxUiIconMaterialsMeta"
+    }
+  ],
   "packages": [
     {
       "id": "dayjs",
@@ -100,26 +119,6 @@
       "editUrls": null
     }
   ],
-  "components": [
-    {
-      "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
-      "version": "latest",
-      "reference": {
-        "id": "@tenx-ui/materials",
-        "version": "latest"
-      },
-      "exportName": "TenxUiMaterialsMeta"
-    },
-    {
-      "url": "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
-      "version": "0.1.5",
-      "reference": {
-        "id": "@tenx-ui/icon-materials",
-        "version": "0.1.5"
-      },
-      "exportName": "TenxUiIconMaterialsMeta"
-    }
-  ],
   "sort": {
     "groupList": ["容器/布局", "组件", "表单", "图表组件", "图标", "低码组件"],
     "categoryList": [
@@ -133,5 +132,6 @@
       "formily 表单组件",
       "业务组件"
     ]
-  }
+  },
+  "version": "1.1.0"
 }

@@ -37,23 +37,23 @@ export const getMeta = (componentName, otherMeta) => {
     componentName,
     priority: getPriority(componentNameArr[0]),
     devMode: 'proCode',
-    ...(otherMeta || {}),
+    ...otherMeta,
     npm: {
       package: '@yunti/yunti-ui-lowcode-materials',
       version: '0.1.0',
       exportName: componentNameArr[0],
       destructuring: true,
       subName: componentNameArr[1] || '',
-      ...(otherMeta?.npm || {}),
+      ...otherMeta?.npm,
     },
     configure: {
-      ...(otherMeta.configure || {}),
+      ...otherMeta.configure,
       props: getCommonProps().concat(otherMeta?.configure?.props || []),
       supports: {
         loop: true,
         condition: true,
         style: true,
-        ...(otherMeta?.configure?.supports || {}),
+        ...otherMeta?.configure?.supports,
       },
     },
   };

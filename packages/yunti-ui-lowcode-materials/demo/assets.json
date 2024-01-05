@@ -1,5 +1,15 @@
 {
-  "version": "1.1.0",
+  "components": [
+    {
+      "url": "/lowcode-materials-public/yunti-ui-lowcode-materials/dist/umd/meta.min.js",
+      "version": "0.1.0",
+      "reference": {
+        "id": "@yunti/yunti-ui-lowcode-materials",
+        "version": "0.1.0"
+      },
+      "exportName": "YuntiUiLowcodeMeta"
+    }
+  ],
   "packages": [
     {
       "id": "dayjs",
@@ -73,17 +83,6 @@
       "editUrls": ["/lowcode-materials-public/yunti-ui-lowcode-materials/dist/umd/view.min.js"]
     }
   ],
-  "components": [
-    {
-      "url": "/lowcode-materials-public/yunti-ui-lowcode-materials/dist/umd/meta.min.js",
-      "version": "0.1.0",
-      "reference": {
-        "id": "@yunti/yunti-ui-lowcode-materials",
-        "version": "0.1.0"
-      },
-      "exportName": "YuntiUiLowcodeMeta"
-    }
-  ],
   "sort": {
     "groupList": ["容器/布局", "组件", "表单", "图表组件", "图标", "低码组件"],
     "categoryList": [
@@ -97,5 +96,6 @@
       "formily 表单组件",
       "业务组件"
     ]
-  }
+  },
+  "version": "1.1.0"
 }

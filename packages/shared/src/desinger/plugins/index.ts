@@ -10,6 +10,7 @@ import SimulatorResizerPlugin from '@alilc/lowcode-plugin-simulator-select';
 import UndoRedoPlugin from '@alilc/lowcode-plugin-undo-redo';
 import ZhEnPlugin from '@alilc/lowcode-plugin-zh-en';
 import PluginCodeGen from '@yunti/lowcode-plugin-code-generator';
+
 import DefaultSettersRegistryPlugin from './plugin-default-setters-registry';
 import EditorInitPlugin from './plugin-editor-init';
 import LogoSamplePlugin from './plugin-logo-sample';

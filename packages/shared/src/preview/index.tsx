@@ -5,6 +5,7 @@ import { AssetLevel, AssetLoader, assetBundle, buildComponents } from '@alilc/lo
 import isArray from 'lodash/isArray';
 import mergeWith from 'lodash/mergeWith';
 import React, { useState } from 'react';
+
 import {
   getPackagesFromLocalStorage,
   getPreviewLocale,
@@ -41,14 +42,14 @@ export const Preview = () => {
 
     const libraryMap = {};
     const libraryAsset = [];
-    packages.forEach(({ package: _package, library, urls, renderUrls }) => {
+    for (const { package: _package, library, urls, renderUrls } of packages) {
       libraryMap[_package] = library;
       if (renderUrls) {
         libraryAsset.push(renderUrls);
       } else if (urls) {
         libraryAsset.push(urls);
       }
-    });
+    }
 
     const vendors = [assetBundle(libraryAsset, AssetLevel.Library)];
 
@@ -89,15 +90,15 @@ export const Preview = () => {
   return (
     <div className="lowcode-plugin-sample-preview">
       <ReactRenderer
+        appHelper={appHelper}
         className="lowcode-plugin-sample-preview-content"
+        components={components}
+        locale={currentLocale}
+        messages={i18n}
         schema={{
           ...schema,
           dataSource: mergeWith(schema.dataSource, projectDataSource, customizer),
         }}
-        components={components}
-        locale={currentLocale}
-        messages={i18n}
-        appHelper={appHelper}
       />
     </div>
   );

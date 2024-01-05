@@ -1,5 +1,24 @@
 {
-  "version": "1.1.0",
+  "components": [
+    {
+      "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
+      "version": "latest",
+      "reference": {
+        "id": "@tenx-ui/materials",
+        "version": "latest"
+      },
+      "exportName": "TenxUiMaterialsMeta"
+    },
+    {
+      "url": "/lowcode-materials-public/react-markdown-lowcode-materials/dist/umd/meta.min.js",
+      "version": "0.1.0",
+      "reference": {
+        "id": "@yuntijs/react-markdown-lowcode-materials",
+        "version": "0.1.0"
+      },
+      "exportName": "ReactMarkdownLowcodeMeta"
+    }
+  ],
   "packages": [
     {
       "id": "dayjs",
@@ -82,35 +101,15 @@
       "editUrls": null
     },
     {
-      "id": "@yunti/react-markdown-lowcode-materials",
+      "id": "@yuntijs/react-markdown-lowcode-materials",
       "meta": {},
       "urls": ["/lowcode-materials-public/react-markdown-lowcode-materials/dist/umd/index.min.js"],
       "library": "ReactMarkdownLowcode",
-      "package": "@yunti/react-markdown-lowcode-materials",
+      "package": "@yuntijs/react-markdown-lowcode-materials",
       "version": "0.1.0",
       "editUrls": [
         "/lowcode-materials-public/react-markdown-lowcode-materials/dist/umd/view.min.js"
       ]
-    }
-  ],
-  "components": [
-    {
-      "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
-      "version": "latest",
-      "reference": {
-        "id": "@tenx-ui/materials",
-        "version": "latest"
-      },
-      "exportName": "TenxUiMaterialsMeta"
-    },
-    {
-      "url": "/lowcode-materials-public/react-markdown-lowcode-materials/dist/umd/meta.min.js",
-      "version": "0.1.0",
-      "reference": {
-        "id": "@yunti/react-markdown-lowcode-materials",
-        "version": "0.1.0"
-      },
-      "exportName": "ReactMarkdownLowcodeMeta"
     }
   ],
   "sort": {
@@ -126,5 +125,6 @@
       "formily 表单组件",
       "业务组件"
     ]
-  }
+  },
+  "version": "1.1.0"
 }

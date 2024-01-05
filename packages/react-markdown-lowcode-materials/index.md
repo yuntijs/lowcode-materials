@@ -6,8 +6,8 @@ order: 1
 ## 基础用法
 
 ```jsx
+import Markdown from '@yuntijs/react-markdown-lowcode-materials';
 import React from 'react';
-import Markdown from '@yunti/react-markdown-lowcode-materials';
 
 const App = () => (
   <div>

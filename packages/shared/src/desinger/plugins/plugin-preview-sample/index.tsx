@@ -1,5 +1,6 @@
 import { Button } from '@alifd/next';
 import { IPublicModelPluginContext } from '@alilc/lowcode-types';
+
 import { saveSchema } from '../../../services/mockService';
 
 // 保存功能示例
@@ -25,7 +26,7 @@ const PreviewSamplePlugin = (ctx: IPublicModelPluginContext) => {
           align: 'right',
         },
         content: (
-          <Button type="primary" onClick={() => doPreview()}>
+          <Button onClick={() => doPreview()} type="primary">
             预览
           </Button>
         ),

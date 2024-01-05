@@ -2,6 +2,7 @@ import React from 'react';
 import OriginalMarkdown, { Options } from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
+
 const Markdown = (props: Options) => {
   const { children, rehypePlugins, remarkPlugins, ...otherProps } = props;
   return (

@@ -1,37 +1,40 @@
-# Gitignore for YuntiJS
+# Prettierignore for YuntiJS
 ################################################################
 
 # general
 .DS_Store
+.editorconfig
 .idea
 .vscode
 .history
 .temp
 .env.local
+.husky
+.npmrc
 venv
 temp
 tmp
+LICENSE
 
 # dependencies
 node_modules
 *.log
 *.lock
 package-lock.json
-bun.lockb
+pnpm-lock.yaml
 
 # ci
 .coverage
 .eslintcache
 .stylelintcache
 coverage
+test-output
 
 # production
 dist
 es
 lib
-umd
 logs
-test-output
 
 # umi
 .umi
@@ -39,10 +42,18 @@ test-output
 .umi-test
 .dumi/tmp*
 
-# husky
-.husky/prepare-commit-msg
+# ignore files
+.*ignore
+
+# docker
+docker
+Dockerfile*
+
+# image
+*.webp
+*.gif
+*.png
+*.jpg
 
 # misc
 # add other ignore file below
-public/
-!public/img

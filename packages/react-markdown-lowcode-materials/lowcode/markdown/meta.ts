@@ -7,7 +7,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
   group: '容器/布局',
   category: '容器组件',
   npm: {
-    package: '@yunti/react-markdown-lowcode-materials',
+    package: '@yuntijs/react-markdown-lowcode-materials',
     version: '0.1.0',
     exportName: 'default',
     destructuring: false,
@@ -38,7 +38,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'plugins',
             'zh-CN': '**deprecat',
           },
@@ -61,7 +61,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
                           {
                             title: {
                               label: {
-                                type: 'i18n',
+                                'type': 'i18n',
                                 'en-US': 'plugins',
                                 'zh-CN': 'plugins',
                               },
@@ -105,7 +105,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
                           {
                             title: {
                               label: {
-                                type: 'i18n',
+                                'type': 'i18n',
                                 'en-US': 'settings',
                                 'zh-CN': 'settings',
                               },
@@ -160,7 +160,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'remarkPlugins',
             'zh-CN': 'remarkPlugins',
           },
@@ -181,7 +181,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
                           {
                             title: {
                               label: {
-                                type: 'i18n',
+                                'type': 'i18n',
                                 'en-US': 'plugins',
                                 'zh-CN': 'plugins',
                               },
@@ -226,7 +226,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
                           {
                             title: {
                               label: {
-                                type: 'i18n',
+                                'type': 'i18n',
                                 'en-US': 'settings',
                                 'zh-CN': 'settings',
                               },
@@ -281,7 +281,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'rehypePlugins',
             'zh-CN': 'rehypePlugins',
           },
@@ -302,7 +302,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
                           {
                             title: {
                               label: {
-                                type: 'i18n',
+                                'type': 'i18n',
                                 'en-US': 'plugins',
                                 'zh-CN': 'plugins',
                               },
@@ -347,7 +347,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
                           {
                             title: {
                               label: {
-                                type: 'i18n',
+                                'type': 'i18n',
                                 'en-US': 'settings',
                                 'zh-CN': 'settings',
                               },
@@ -402,7 +402,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'allowedElements',
             'zh-CN': 'allowedElements',
           },
@@ -421,7 +421,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'disallowedElements',
             'zh-CN': 'disallowedElements',
           },
@@ -441,7 +441,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'allowElement',
             'zh-CN': 'allowElement',
           },
@@ -454,7 +454,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'unwrapDisallowed',
             'zh-CN': 'unwrapDisallowed',
           },
@@ -467,7 +467,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'sourcePos',
             'zh-CN': 'sourcePos',
           },
@@ -480,7 +480,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'rawSourcePos',
             'zh-CN': 'rawSourcePos',
           },
@@ -493,7 +493,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'skipHtml',
             'zh-CN': 'skipHtml',
           },
@@ -506,7 +506,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'includeElementIndex',
             'zh-CN': 'includeElementIndex',
           },
@@ -519,7 +519,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'transformLinkUri',
             'zh-CN': 'transformLinkUri',
           },
@@ -556,7 +556,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'transformImageUri',
             'zh-CN': 'transformImageUri',
           },
@@ -569,7 +569,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'linkTarget',
             'zh-CN': 'linkTarget',
           },
@@ -584,7 +584,7 @@ const MarkdownMeta: IPublicTypeComponentMetadata = {
       {
         title: {
           label: {
-            type: 'i18n',
+            'type': 'i18n',
             'en-US': 'components',
             'zh-CN': 'components',
           },

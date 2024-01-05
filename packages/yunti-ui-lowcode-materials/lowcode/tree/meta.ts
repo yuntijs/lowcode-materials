@@ -1,4 +1,5 @@
 import { IPublicTypeComponentMetadata, IPublicTypeSnippet } from '@alilc/lowcode-types';
+
 import { getMeta } from '../utils';
 
 const TreeMeta: IPublicTypeComponentMetadata = getMeta('Tree', {
