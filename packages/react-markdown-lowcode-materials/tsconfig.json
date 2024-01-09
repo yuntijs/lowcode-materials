@@ -2,6 +2,7 @@
   "buildOnSave": false,
   "compileOnSave": false,
   "compilerOptions": {
+    "declaration": true,
     "outDir": "build",
     "module": "esnext",
     "target": "es6",
