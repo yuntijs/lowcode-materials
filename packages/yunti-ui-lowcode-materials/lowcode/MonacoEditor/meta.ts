@@ -35,6 +35,21 @@ export const MonacoEditorMeta: IPublicTypeComponentMetadata = {
             setter: Setters.StringSetter,
           },
           {
+            name: 'value',
+            title: {
+              label: 'value 值',
+            },
+            setter: Setters.TextAreaSetter,
+          },
+          {
+            name: 'original',
+            title: {
+              label: '原始值',
+              tip: 'original 原始值，仅 DiffEditor 可用',
+            },
+            setter: Setters.TextAreaSetter,
+          },
+          {
             name: 'width',
             title: {
               label: '宽度',
@@ -101,7 +116,6 @@ export const MonacoEditorMeta: IPublicTypeComponentMetadata = {
             setter: {
               ...Setters.RadioGroupSetter,
               props: {
-                defaultValue: 'off',
                 options: ['on', 'off', 'auto'],
               },
             },
