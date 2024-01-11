@@ -12,7 +12,7 @@ export const MonacoEditorMeta: IPublicTypeComponentMetadata = {
   priority: getPriority('MonacoEditor'),
   devMode: 'proCode',
   npm: {
-    package: '@yunti/ui-lowcode-materials',
+    package: '@yuntijs/ui-lowcode-materials',
     version: '{{version}}',
     exportName: 'MonacoEditor',
     destructuring: true,
@@ -220,7 +220,7 @@ export const MonacoDiffEditorMeta: IPublicTypeComponentMetadata = {
   priority: getPriority('MonacoDiffEditor'),
   devMode: 'proCode',
   npm: {
-    package: '@yunti/ui-lowcode-materials',
+    package: '@yuntijs/ui-lowcode-materials',
     version: '{{version}}',
     exportName: 'MonacoDiffEditor',
     destructuring: true,

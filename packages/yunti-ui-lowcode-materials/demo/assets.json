@@ -4,7 +4,7 @@
       "url": "/lowcode-materials-public/yunti-ui-lowcode-materials/dist/umd/meta.min.js",
       "version": "0.1.0",
       "reference": {
-        "id": "@yunti/ui-lowcode-materials",
+        "id": "@yuntijs/ui-lowcode-materials",
         "version": "0.1.0"
       },
       "exportName": "YuntiUiLowcodeMeta"
@@ -74,11 +74,11 @@
       "editUrls": null
     },
     {
-      "id": "@yunti/ui-lowcode-materials",
+      "id": "@yuntijs/ui-lowcode-materials",
       "meta": {},
       "urls": ["/lowcode-materials-public/yunti-ui-lowcode-materials/dist/umd/index.min.js"],
       "library": "YuntiUiLowcode",
-      "package": "@yunti/ui-lowcode-materials",
+      "package": "@yuntijs/ui-lowcode-materials",
       "version": "0.1.0",
       "editUrls": ["/lowcode-materials-public/yunti-ui-lowcode-materials/dist/umd/view.min.js"]
     }

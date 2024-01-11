@@ -13,7 +13,7 @@ export const TreeMeta: IPublicTypeComponentMetadata = {
   priority: getPriority(componentName),
   devMode: 'proCode',
   npm: {
-    package: '@yunti/ui-lowcode-materials',
+    package: '@yuntijs/ui-lowcode-materials',
     version: '{{version}}',
     exportName: componentName,
     destructuring: true,

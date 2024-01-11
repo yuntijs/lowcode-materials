@@ -14,7 +14,7 @@ export const MonacoEditorSnippets: IPublicTypeSnippet[] = [
   "version": "1.0.0",
   "componentsMap": [
     {
-      "package": "@yunti/ui-lowcode-materials",
+      "package": "@yuntijs/ui-lowcode-materials",
       "version": "1.0.0",
       "exportName": "MonacoEditor",
       "destructuring": true,
@@ -44,7 +44,7 @@ export const MonacoDiffEditorSnippets: IPublicTypeSnippet[] = [
   "version": "1.0.0",
   "componentsMap": [
     {
-      "package": "@yunti/ui-lowcode-materials",
+      "package": "@yuntijs/ui-lowcode-materials",
       "version": "1.0.0",
       "exportName": "MonacoDiffEditor",
       "destructuring": true,
@@ -59,7 +59,7 @@ export const MonacoDiffEditorSnippets: IPublicTypeSnippet[] = [
   "version": "1.0.0",
   "componentsMap": [
     {
-      "package": "@yunti/ui-lowcode-materials",
+      "package": "@yuntijs/ui-lowcode-materials",
       "version": "1.1.0",
       "exportName": "MonacoDiffEditor",
       "destructuring": true,
