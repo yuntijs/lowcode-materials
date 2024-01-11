@@ -2,6 +2,31 @@
 
 # Changelog
 
+### [Version 1.1.3](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.2...@yuntijs/ui-lowcode-materials@1.1.3)
+
+<sup>Released on **2024-01-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **yunti-ui**: Fix import Setters issue for Monaco Editor Meta.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **yunti-ui**: Fix import Setters issue for Monaco Editor Meta ([b16cca5](https://github.com/yuntijs/lowcode-materials/commit/b16cca5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.1.2](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.1...@yuntijs/ui-lowcode-materials@1.1.2)
 
 <sup>Released on **2024-01-11**</sup>
