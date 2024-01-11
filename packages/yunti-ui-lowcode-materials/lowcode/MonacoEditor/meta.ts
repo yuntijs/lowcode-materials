@@ -1,6 +1,6 @@
 import { IPublicTypeComponentMetadata, IPublicTypeConfigure } from '@alilc/lowcode-types';
 
-import { Setters } from '../../../shared/src';
+import { Setters } from '../../../shared/src/setters';
 import { COMMON_CONFIGURE_PROPS, getPriority } from '../utils';
 import { MonacoDiffEditorSnippets, MonacoEditorSnippets } from './snippets';
 
