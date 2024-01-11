@@ -1,60 +1,31 @@
+import { IPublicTypeFieldConfig } from '@alilc/lowcode-types';
+
 // 获取组件优先级
-const getPriority = componentName => {
+export const getPriority = (componentName: string) => {
   const priorities = {};
   const SortArr = ['Tree'];
-  SortArr.map((component, i) => {
+  for (const [i, component] of SortArr.entries()) {
     priorities[component] = SortArr.length - i;
-  });
+  }
   return priorities[componentName];
 };
 
-export const getCommonProps = () => [
+export const COMMON_CONFIGURE_PROPS: IPublicTypeFieldConfig[] = [
   {
-    title: '通用属性',
+    title: '通用配置',
     display: 'block',
     type: 'group',
     items: [
       {
         name: 'id',
-        title: { label: '唯一id', tip: 'id' },
-        setter: ['StringSetter'],
+        title: { label: '唯一 id', tip: 'id' },
+        setter: [{ componentName: 'StringSetter' }],
       },
       {
         name: 'className',
         title: { label: '类名', tip: '自定义样式类名' },
-        setter: ['StringSetter'],
+        setter: [{ componentName: 'StringSetter' }],
       },
     ],
   },
 ];
-
-export const getMeta = (componentName, otherMeta) => {
-  const componentNameArr = componentName.split('.');
-
-  return {
-    title: componentName,
-    group: 'YuntiUi',
-    componentName,
-    priority: getPriority(componentNameArr[0]),
-    devMode: 'proCode',
-    ...otherMeta,
-    npm: {
-      package: '@yunti/yunti-ui-lowcode-materials',
-      version: '0.1.0',
-      exportName: componentNameArr[0],
-      destructuring: true,
-      subName: componentNameArr[1] || '',
-      ...otherMeta?.npm,
-    },
-    configure: {
-      ...otherMeta.configure,
-      props: getCommonProps().concat(otherMeta?.configure?.props || []),
-      supports: {
-        loop: true,
-        condition: true,
-        style: true,
-        ...otherMeta?.configure?.supports,
-      },
-    },
-  };
-};

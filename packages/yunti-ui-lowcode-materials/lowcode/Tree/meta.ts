@@ -1,11 +1,27 @@
-import { IPublicTypeComponentMetadata, IPublicTypeSnippet } from '@alilc/lowcode-types';
+import { IPublicTypeComponentMetadata } from '@alilc/lowcode-types';
 
-import { getMeta } from '../utils';
+import { COMMON_CONFIGURE_PROPS, getPriority } from '../utils';
+import { TreeSnippets } from './snippets';
 
-const TreeMeta: IPublicTypeComponentMetadata = getMeta('Tree', {
+const componentName = 'Tree';
+
+export const TreeMeta: IPublicTypeComponentMetadata = {
+  title: componentName,
+  componentName,
   category: '数据展示',
+  snippets: TreeSnippets,
+  priority: getPriority(componentName),
+  devMode: 'proCode',
+  npm: {
+    package: '@yunti/ui-lowcode-materials',
+    version: '{{version}}',
+    exportName: componentName,
+    destructuring: true,
+    subName: '',
+  },
   configure: {
     props: [
+      ...COMMON_CONFIGURE_PROPS,
       {
         name: 'treeData',
         title: {
@@ -431,6 +447,9 @@ const TreeMeta: IPublicTypeComponentMetadata = getMeta('Tree', {
       },
     ],
     supports: {
+      loop: true,
+      condition: true,
+      style: true,
       events: [
         {
           name: 'onCheck',
@@ -501,47 +520,4 @@ const TreeMeta: IPublicTypeComponentMetadata = getMeta('Tree', {
       ],
     },
   },
-});
-const snippets: IPublicTypeSnippet[] = [
-  {
-    title: 'Tree',
-    screenshot: '',
-    schema: {
-      componentName: 'Tree',
-      props: {
-        __component_name: 'Tree',
-        treeData: [
-          {
-            title: 'parent 1',
-            key: '0-0',
-            children: [
-              {
-                title: 'parent 1-0',
-                key: '0-0-0',
-                disabled: true,
-                children: [
-                  {
-                    title: 'leaf',
-                    key: '0-0-0-0',
-                    disableCheckbox: true,
-                  },
-                  {
-                    title: 'leaf',
-                    key: '0-0-0-1',
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    },
-  },
-];
-
-const meta = {
-  ...TreeMeta,
-  snippets,
 };
-
-export default meta;

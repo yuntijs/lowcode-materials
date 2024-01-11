@@ -1,9 +1,13 @@
 import pkgJson from '../package.json';
-import tree from './tree/meta';
+import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
+import { TreeMeta } from './Tree/meta';
 
-const components = [tree].map(c => {
+const components = [TreeMeta, MonacoEditorMeta, MonacoDiffEditorMeta].map(c => {
   if (c.npm) {
     c.npm.version = pkgJson.version;
+  }
+  if (!c.group) {
+    c.group = 'YuntiUI 组件';
   }
   return c;
 });
