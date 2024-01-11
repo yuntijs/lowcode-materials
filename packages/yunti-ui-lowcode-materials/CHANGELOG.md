@@ -2,6 +2,31 @@
 
 # Changelog
 
+### [Version 1.1.2](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.1...@yuntijs/ui-lowcode-materials@1.1.2)
+
+<sup>Released on **2024-01-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **yunti-ui**: Add value, original props support for MonacoEditor.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **yunti-ui**: Add value, original props support for MonacoEditor ([9faf63e](https://github.com/yuntijs/lowcode-materials/commit/9faf63e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.1.1](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.0...@yuntijs/ui-lowcode-materials@1.1.1)
 
 <sup>Released on **2024-01-11**</sup>
