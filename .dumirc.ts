@@ -5,11 +5,16 @@ import { join } from 'path';
 import { PUBLIC_PATH } from './constants';
 
 const headPkgList: string[] = [];
-const pkgList = readdirSync(join(__dirname, 'packages')).filter(
+const pkgDirList = readdirSync(join(__dirname, 'packages')).filter(
   pkg => !pkg.includes('.') && !headPkgList.includes(pkg)
 );
-const alias = pkgList.reduce((pre, pkg) => {
-  pre[`@yuntijs/${pkg}`] = join(__dirname, 'packages', pkg, 'src');
+const pkgs = {
+  'shared': 'lowcode-materials-shared',
+  'react-markdown-lowcode-materials': 'react-markdown-lowcode-materials',
+  'yunti-ui-lowcode-materials': 'ui-lowcode-materials',
+};
+export const alias = pkgDirList.reduce((pre, name) => {
+  pre[`@yuntijs/${pkgs[name]}`] = join(__dirname, 'packages', name, 'src');
   return {
     ...pre,
   };
@@ -17,6 +22,7 @@ const alias = pkgList.reduce((pre, pkg) => {
 
 export default defineConfig({
   alias,
+  // autoAlias: true,
   resolve: {
     docDirs: ['docs'],
     atomDirs: [{ type: 'lowcode-materials', dir: 'packages' }],
@@ -27,7 +33,7 @@ export default defineConfig({
     logo: `${PUBLIC_PATH}img/logo.svg`,
     nav: [
       { title: '开发指南', link: '/guide' },
-      { title: '组件总览', link: '/lowcode-materials' },
+      { title: '组件总览', link: '/lowcode-materials/overview' },
     ],
   },
   ignoreMomentLocale: true,
@@ -42,7 +48,7 @@ export default defineConfig({
   // 默认重定向到子包的 src 文件夹
   monorepoRedirect: {
     peerDeps: true,
-    useRootProject: true, // 暂未生效，使用手动添加 alias 的方式避免 mfsu 导致的 monorepo 子包缓存
+    useRootProject: true,
   },
   lessLoader: {
     javascriptEnabled: true,

@@ -16,7 +16,7 @@ const REACT_SCRTPS = {
 const LOW_CODE_HEAD_SCRIPTS = [
   'https://g.alicdn.com/mylib/moment/2.24.0/min/moment.min.js',
   'https://g.alicdn.com/code/lib/alifd__next/1.26.8/next.min.js',
-  'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.2.1/dist/js/engine-core.js',
+  'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.2.5/dist/js/engine-core.js',
   'https://alifd.alicdn.com/npm/@alilc/lowcode-engine-ext@1.0.6/dist/js/engine-ext.js',
 ];
 
@@ -34,7 +34,7 @@ const LOW_CODE_LINKS = [
     rel: 'stylesheet',
   },
   {
-    href: 'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.2.1/dist/css/engine-core.css',
+    href: 'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.2.5/dist/css/engine-core.css',
     rel: 'stylesheet',
   },
   {
@@ -54,7 +54,17 @@ const ProjectPlugin = (api: IApi) => {
     const lowCodeLinks = LOW_CODE_LINKS.map(
       ({ href, rel }) => `<link href="${href}" rel="${rel}">`
     );
-    if (!isProd) {
+    if (isProd) {
+      // 生产环境中通过 yunti-server ejs render 在不同的页面引入不同的依赖
+      $('head').append(
+        `[? if (LOW_CODE) { ?]
+${lowCodeLinks.join('\n')}
+${lowCodeScripts.join('\n')}
+[? } else { ?]
+${scripts.join('\n')}
+[? } ?]`
+      );
+    } else {
       // 仅为设计页面增加 LowCode 相关资源文件
       if (path.startsWith('/~demos/')) {
         $('head').append(
@@ -66,16 +76,6 @@ ${lowCodeScripts.join('\n')}`
 ${scripts.join('\n')}
         `);
       }
-    } else {
-      // 生产环境中通过 yunti-server ejs render 在不同的页面引入不同的依赖
-      $('head').append(
-        `[? if (LOW_CODE) { ?]
-${lowCodeLinks.join('\n')}
-${lowCodeScripts.join('\n')}
-[? } else { ?]
-${scripts.join('\n')}
-[? } ?]`
-      );
     }
     return $;
   });

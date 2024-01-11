@@ -80,7 +80,7 @@ const setPackagesToLocalStorage = async (scenarioName: string) => {
     console.error('scenarioName is required!');
     return;
   }
-  const packages = await filterPackages(material.getAssets().packages);
+  const packages = await filterPackages(material.getAssets()?.packages || []);
   window.localStorage.setItem(getLSName(scenarioName, 'packages'), JSON.stringify(packages));
 };
 
