@@ -1,8 +1,9 @@
 import pkgJson from '../package.json';
 import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
 import { TreeMeta } from './Tree/meta';
+import breadcrumbMeta from './breadcrumb/meta';
 
-const components = [TreeMeta, MonacoEditorMeta, MonacoDiffEditorMeta].map(c => {
+const components = [TreeMeta, MonacoEditorMeta, MonacoDiffEditorMeta, breadcrumbMeta].map(c => {
   if (c.npm) {
     c.npm.version = pkgJson.version;
   }
