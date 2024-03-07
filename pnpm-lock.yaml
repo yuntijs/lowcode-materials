@@ -186,8 +186,8 @@ importers:
         specifier: ^7.0.0
         version: 7.23.2
       '@yuntijs/ui':
-        specifier: 1.0.0-beta.3
-        version: 1.0.0-beta.3(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2)
+        specifier: 1.0.0-beta.7
+        version: 1.0.0-beta.7(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -4026,7 +4026,7 @@ packages:
       immer: 10.0.3
       leva: 0.9.35(@types/react-dom@17.0.22)(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
       lodash-es: 4.17.21
-      lucide-react: 0.309.0(react@17.0.2)
+      lucide-react: 0.349.0(react@17.0.2)
       polished: 4.2.2
       prism-react-renderer: 2.3.1(react@17.0.2)
       query-string: 8.1.0
@@ -7506,8 +7506,8 @@ packages:
       - typescript
     dev: true
 
-  /@yuntijs/ui@1.0.0-beta.3(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-QH80iBgpVB0UkouQtGgDPxnjCFEA/QrPtSIOkSuoWZk/5+Arz4uBF61ITckhjYNRopefEFa1+Ho+PoDB38xe8A==}
+  /@yuntijs/ui@1.0.0-beta.7(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-w2PJd4Wpy/OLvrHyOImKESbxMAnFBsj5271vWm0SFTznU1NKd3BMDDMMCxovyrr3ucvfmDP35s6EyfdZa5tw+g==}
     peerDependencies:
       antd: '>=5'
       antd-style: '>=3'
@@ -7522,7 +7522,7 @@ packages:
       antd-style: 3.6.1(@types/react@17.0.69)(antd@5.12.6)(react-dom@17.0.2)(react@17.0.2)
       leva: 0.9.35(@types/react-dom@17.0.22)(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
       lodash-es: 4.17.21
-      lucide-react: 0.309.0(react@17.0.2)
+      lucide-react: 0.349.0(react@17.0.2)
       query-string: 8.1.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -14891,7 +14891,7 @@ packages:
     dev: true
 
   /lodash-es@4.17.21:
-    resolution: {integrity: sha1-Q+YmxG5lkbd1C+srUBFzkMYJ4+4=}
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
 
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
@@ -15080,8 +15080,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /lucide-react@0.309.0(react@17.0.2):
-    resolution: {integrity: sha512-zNVPczuwFrCfksZH3zbd1UDE6/WYhYAdbe2k7CImVyPAkXLgIwbs6eXQ4loigqDnUFjyFYCI5jZ1y10Kqal0dg==}
+  /lucide-react@0.349.0(react@17.0.2):
+    resolution: {integrity: sha512-Sa+5bRi0RYcyOUU2ifTtNXNiHs87JvdE78DbSfcqWk7JmGsomnFnvzmAhyPjfaCZf3HJMAqHCJOMXGRbB89Q1g==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
