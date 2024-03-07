@@ -121,6 +121,15 @@ export const MonacoEditorMeta: IPublicTypeComponentMetadata = {
             },
           },
           {
+            name: 'supportFullScreen',
+            title: {
+              label: '全屏按钮',
+              tip: '是否展示全屏按钮',
+            },
+            defaultValue: false,
+            setter: Setters.BoolSetter,
+          },
+          {
             name: 'contextmenu',
             title: {
               label: '右键菜单',
