@@ -2,6 +2,31 @@
 
 # Changelog
 
+### [Version 1.2.1](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.2.0...@yuntijs/ui-lowcode-materials@1.2.1)
+
+<sup>Released on **2024-03-07**</sup>
+
+#### 🐛 Bug Fixes
+
+- **yunti-ui**: Support supportFullScreen props for monaco editor.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **yunti-ui**: Support supportFullScreen props for monaco editor ([f150612](https://github.com/yuntijs/lowcode-materials/commit/f150612))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.2.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.3...@yuntijs/ui-lowcode-materials@1.2.0)
 
 <sup>Released on **2024-03-07**</sup>
