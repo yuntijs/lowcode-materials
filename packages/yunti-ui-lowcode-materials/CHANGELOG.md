@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [Version 1.2.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.3...@yuntijs/ui-lowcode-materials@1.2.0)
+
+<sup>Released on **2024-03-07**</sup>
+
+#### ✨ Features
+
+- **yunti-ui**: Bump @yuntijs/ui\@1.0.0-beta.7.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **yunti-ui**: Bump @yuntijs/ui\@1.0.0-beta.7 ([444391c](https://github.com/yuntijs/lowcode-materials/commit/444391c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.1.3](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.1.2...@yuntijs/ui-lowcode-materials@1.1.3)
 
 <sup>Released on **2024-01-11**</sup>
