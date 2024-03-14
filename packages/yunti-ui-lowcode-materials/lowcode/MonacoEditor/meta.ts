@@ -184,7 +184,7 @@ export const MonacoEditorMeta: IPublicTypeComponentMetadata = {
             title: {
               label: 'options',
             },
-            setter: Setters.VariableSetter,
+            setter: Setters.MixedSetter,
           },
         ],
       },

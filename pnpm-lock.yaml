@@ -186,8 +186,8 @@ importers:
         specifier: ^7.0.0
         version: 7.23.2
       '@yuntijs/ui':
-        specifier: 1.0.0-beta.7
-        version: 1.0.0-beta.7(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2)
+        specifier: 1.0.0-beta.8
+        version: 1.0.0-beta.8(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -4026,7 +4026,7 @@ packages:
       immer: 10.0.3
       leva: 0.9.35(@types/react-dom@17.0.22)(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
       lodash-es: 4.17.21
-      lucide-react: 0.349.0(react@17.0.2)
+      lucide-react: 0.357.0(react@17.0.2)
       polished: 4.2.2
       prism-react-renderer: 2.3.1(react@17.0.2)
       query-string: 8.1.0
@@ -7506,8 +7506,8 @@ packages:
       - typescript
     dev: true
 
-  /@yuntijs/ui@1.0.0-beta.7(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-w2PJd4Wpy/OLvrHyOImKESbxMAnFBsj5271vWm0SFTznU1NKd3BMDDMMCxovyrr3ucvfmDP35s6EyfdZa5tw+g==}
+  /@yuntijs/ui@1.0.0-beta.8(@types/react-dom@17.0.22)(@types/react@17.0.69)(antd-style@3.6.1)(antd@5.12.6)(monaco-editor@0.44.0)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-TrbYkOG4i0KWp+4PjZFBni91iAJJZ+RO9ldtHTHnOTBrDPapzHWG1Cw4YlSHPWIu/1CIub3DcEvZJCvwVDcH+Q==}
     peerDependencies:
       antd: '>=5'
       antd-style: '>=3'
@@ -7522,7 +7522,7 @@ packages:
       antd-style: 3.6.1(@types/react@17.0.69)(antd@5.12.6)(react-dom@17.0.2)(react@17.0.2)
       leva: 0.9.35(@types/react-dom@17.0.22)(@types/react@17.0.69)(react-dom@17.0.2)(react@17.0.2)
       lodash-es: 4.17.21
-      lucide-react: 0.349.0(react@17.0.2)
+      lucide-react: 0.357.0(react@17.0.2)
       query-string: 8.1.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -15080,8 +15080,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /lucide-react@0.349.0(react@17.0.2):
-    resolution: {integrity: sha512-Sa+5bRi0RYcyOUU2ifTtNXNiHs87JvdE78DbSfcqWk7JmGsomnFnvzmAhyPjfaCZf3HJMAqHCJOMXGRbB89Q1g==}
+  /lucide-react@0.357.0(react@17.0.2):
+    resolution: {integrity: sha512-ILK6Ye6BMFyXyIHqG8FwMit1XKrj4KocLLLW4fDAAwsFjt6gSL9U6e3sZlbARIOqv0oP5XzLVacHEcb2SxuWkw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:

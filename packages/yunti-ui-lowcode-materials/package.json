@@ -23,7 +23,7 @@
   "dependencies": {
     "@alilc/lowcode-types": "^1.2.1",
     "@babel/runtime": "^7.0.0",
-    "@yuntijs/ui": "1.0.0-beta.7"
+    "@yuntijs/ui": "1.0.0-beta.8"
   },
   "peerDependencies": {
     "lodash": "^4.17.21",
