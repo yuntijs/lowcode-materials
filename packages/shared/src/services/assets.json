@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
+      "url": "http://dev-unpkg.tenxcloud.net/@tenx-ui/materials@latest/build/lowcode/meta.js",
       "version": "latest",
       "reference": {
         "id": "@tenx-ui/materials",
@@ -10,7 +10,7 @@
       "exportName": "TenxUiMaterialsMeta"
     },
     {
-      "url": "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
+      "url": "http://dev-unpkg.tenxcloud.net/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
       "version": "0.1.5",
       "reference": {
         "id": "@tenx-ui/icon-materials",
@@ -22,11 +22,11 @@
   "packages": [
     {
       "id": "dayjs",
-      "urls": ["http://172.22.96.37/dayjs@1.11.6/dayjs.min.js"],
+      "urls": ["http://dev-unpkg.tenxcloud.net/dayjs@1.11.6/dayjs.min.js"],
       "library": "dayjs",
       "package": "dayjs",
       "version": "1.11.6",
-      "editUrls": ["http://172.22.96.37/dayjs@1.11.6/dayjs.min.js"]
+      "editUrls": ["http://dev-unpkg.tenxcloud.net/dayjs@1.11.6/dayjs.min.js"]
     },
     {
       "id": "antd",
@@ -76,43 +76,45 @@
     {
       "id": "@tenx-ui/materials",
       "meta": {
-        "url": "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/meta.js",
+        "url": "http://dev-unpkg.tenxcloud.net/@tenx-ui/materials@latest/build/lowcode/meta.js",
         "exportName": "TenxUiMaterialsMeta"
       },
       "urls": [
-        "http://172.22.96.37/@tenx-ui/materials@latest/dist/TenxUiMaterials.js",
-        "http://172.22.96.37/@tenx-ui/materials@latest/dist/TenxUiMaterials.css"
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/materials@latest/dist/TenxUiMaterials.js",
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/materials@latest/dist/TenxUiMaterials.css"
       ],
       "library": "TenxUiMaterials",
       "package": "@tenx-ui/materials",
       "version": "latest",
       "editUrls": [
-        "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/view.css",
-        "http://172.22.96.37/@tenx-ui/materials@latest/build/lowcode/view.js"
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/materials@latest/build/lowcode/view.css",
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/materials@latest/build/lowcode/view.js"
       ]
     },
     {
       "meta": {
-        "url": "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
+        "url": "http://dev-unpkg.tenxcloud.net/@tenx-ui/icon-materials@0.1.5/build/lowcode/meta.js",
         "exportName": "TenxUiIconMaterialsMeta"
       },
       "urls": [
-        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/dist/TenxUiIconMaterials.js",
-        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/dist/TenxUiIconMaterials.css"
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/icon-materials@0.1.5/dist/TenxUiIconMaterials.js",
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/icon-materials@0.1.5/dist/TenxUiIconMaterials.css"
       ],
       "library": "TenxUiIconMaterials",
       "package": "@tenx-ui/icon-materials",
       "version": "0.1.5",
       "editUrls": [
-        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/view.css",
-        "http://172.22.96.37/@tenx-ui/icon-materials@0.1.5/build/lowcode/view.js"
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/icon-materials@0.1.5/build/lowcode/view.css",
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/icon-materials@0.1.5/build/lowcode/view.js"
       ],
       "id": "@tenx-ui/icon-materials"
     },
     {
       "id": "@tenx-ui/auth-utils",
       "meta": {},
-      "urls": ["http://172.22.96.37/@tenx-ui/auth-utils@0.0.2/dist/umd/auth-utils.min.js"],
+      "urls": [
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/auth-utils@0.0.2/dist/umd/auth-utils.min.js"
+      ],
       "library": "authUtils",
       "package": "@tenx-ui/auth-utils",
       "version": "0.0.2",

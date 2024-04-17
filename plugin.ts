@@ -22,7 +22,7 @@ const LOW_CODE_HEAD_SCRIPTS = [
 
 const LOW_CODE_LINKS = [
   {
-    href: 'http://172.22.96.37/@tenx-ui/icon@2.4.12/dist/@tenx-ui/icon.css',
+    href: 'http://dev-unpkg.tenxcloud.net/@tenx-ui/icon@2.4.12/dist/@tenx-ui/icon.css',
     rel: 'stylesheet',
   },
   {

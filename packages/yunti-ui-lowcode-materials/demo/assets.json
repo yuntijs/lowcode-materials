@@ -13,11 +13,11 @@
   "packages": [
     {
       "id": "dayjs",
-      "urls": ["http://172.22.96.37/dayjs@1.11.6/dayjs.min.js"],
+      "urls": ["http://dev-unpkg.tenxcloud.net/dayjs@1.11.6/dayjs.min.js"],
       "library": "dayjs",
       "package": "dayjs",
       "version": "1.11.6",
-      "editUrls": ["http://172.22.96.37/dayjs@1.11.6/dayjs.min.js"]
+      "editUrls": ["http://dev-unpkg.tenxcloud.net/dayjs@1.11.6/dayjs.min.js"]
     },
     {
       "id": "antd",
@@ -67,7 +67,9 @@
     {
       "id": "@tenx-ui/auth-utils",
       "meta": {},
-      "urls": ["http://172.22.96.37/@tenx-ui/auth-utils@0.0.2/dist/umd/auth-utils.min.js"],
+      "urls": [
+        "http://dev-unpkg.tenxcloud.net/@tenx-ui/auth-utils@0.0.2/dist/umd/auth-utils.min.js"
+      ],
       "library": "authUtils",
       "package": "@tenx-ui/auth-utils",
       "version": "0.0.2",
