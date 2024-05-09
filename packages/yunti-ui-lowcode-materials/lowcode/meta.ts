@@ -1,5 +1,6 @@
 import pkgJson from '../package.json';
 import { AlertMeta } from './Alert/meta';
+import { ButtonMeta } from './Button/meta';
 import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
 import { SliderInputMeta } from './SliderInput/meta';
 import { TreeMeta } from './Tree/meta';
@@ -10,6 +11,7 @@ const components = [
   MonacoDiffEditorMeta,
   SliderInputMeta,
   AlertMeta,
+  ButtonMeta,
 ].map(c => {
   if (c.npm) {
     c.npm.version = pkgJson.version;
