@@ -4,6 +4,7 @@ import { AlertMeta } from './Alert/meta';
 import { AnchorMeta } from './Anchor/meta';
 import { AppMeta } from './App/meta';
 import { AutoCompleteMeta } from './AutoComplete/meta';
+import { AvatarMeta } from './Avatar/meta';
 import { ButtonMeta } from './Button/meta';
 import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
 import { SliderInputMeta } from './SliderInput/meta';
@@ -19,6 +20,7 @@ const components = [
   AnchorMeta,
   AppMeta,
   AutoCompleteMeta,
+  AvatarMeta,
   ButtonMeta,
 ].map(c => {
   if (c.npm) {
