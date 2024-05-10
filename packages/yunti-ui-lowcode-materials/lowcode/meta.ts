@@ -3,6 +3,7 @@ import { AffixMeta } from './Affix/meta';
 import { AlertMeta } from './Alert/meta';
 import { AnchorMeta } from './Anchor/meta';
 import { AppMeta } from './App/meta';
+import { AutoCompleteMeta } from './AutoComplete/meta';
 import { ButtonMeta } from './Button/meta';
 import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
 import { SliderInputMeta } from './SliderInput/meta';
@@ -17,6 +18,7 @@ const components = [
   AlertMeta,
   AnchorMeta,
   AppMeta,
+  AutoCompleteMeta,
   ButtonMeta,
 ].map(c => {
   if (c.npm) {
