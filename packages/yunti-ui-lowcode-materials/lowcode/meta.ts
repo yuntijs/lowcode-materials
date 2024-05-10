@@ -1,6 +1,7 @@
 import pkgJson from '../package.json';
 import { AffixMeta } from './Affix/meta';
 import { AlertMeta } from './Alert/meta';
+import { AnchorMeta } from './Anchor/meta';
 import { ButtonMeta } from './Button/meta';
 import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
 import { SliderInputMeta } from './SliderInput/meta';
@@ -11,8 +12,9 @@ const components = [
   MonacoEditorMeta,
   MonacoDiffEditorMeta,
   SliderInputMeta,
-  AlertMeta,
   AffixMeta,
+  AlertMeta,
+  AnchorMeta,
   ButtonMeta,
 ].map(c => {
   if (c.npm) {
