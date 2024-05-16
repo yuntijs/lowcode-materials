@@ -2,6 +2,36 @@
 
 # Changelog
 
+## [Version 1.5.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.4.0...@yuntijs/ui-lowcode-materials@1.5.0)
+
+<sup>Released on **2024-05-16**</sup>
+
+#### ✨ Features
+
+- **misc**: Add Affix meta to yunti-ui, add Anchor Meta to yunti-ui, add App to yunti-ui, add AutoCompleteMeta to yunti-ui, add Avatar meta to yunti-ui, add Button meta to yunti-ui.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add Affix meta to yunti-ui ([8e19c6f](https://github.com/yuntijs/lowcode-materials/commit/8e19c6f))
+- **misc**: Add Anchor Meta to yunti-ui ([0901463](https://github.com/yuntijs/lowcode-materials/commit/0901463))
+- **misc**: Add App to yunti-ui ([e5ae923](https://github.com/yuntijs/lowcode-materials/commit/e5ae923))
+- **misc**: Add AutoCompleteMeta to yunti-ui ([95b0c94](https://github.com/yuntijs/lowcode-materials/commit/95b0c94))
+- **misc**: Add Avatar meta to yunti-ui ([e8da8c9](https://github.com/yuntijs/lowcode-materials/commit/e8da8c9))
+- **misc**: Add Button meta to yunti-ui ([75f4c0e](https://github.com/yuntijs/lowcode-materials/commit/75f4c0e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.4.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.3.1...@yuntijs/ui-lowcode-materials@1.4.0)
 
 <sup>Released on **2024-05-09**</sup>
