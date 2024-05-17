@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [Version 1.6.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.5.0...@yuntijs/ui-lowcode-materials@1.6.0)
+
+<sup>Released on **2024-05-17**</sup>
+
+#### ✨ Features
+
+- **misc**: Bump @yuntijs/ui\@1.0.0-beta.19 and move it to peer dependencies.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Bump @yuntijs/ui\@1.0.0-beta.19 and move it to peer dependencies ([2ccd2ab](https://github.com/yuntijs/lowcode-materials/commit/2ccd2ab))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.5.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.4.0...@yuntijs/ui-lowcode-materials@1.5.0)
 
 <sup>Released on **2024-05-16**</sup>
