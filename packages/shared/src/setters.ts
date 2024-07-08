@@ -1,3 +1,5 @@
+import type { IBaseRendererInstance } from '@alilc/lowcode-renderer-core/lib/types';
+
 /**
  * 所有设置器
  */
@@ -156,4 +158,9 @@ export const STYLE_ONLY_CSS_CODE_PROP = {
       showModuleList: [],
     },
   },
+};
+
+export const getSimulatorRenderer = () => {
+  const renderer = (window as any).AliLowCodeEngine.project.simulator.renderer;
+  return renderer[Object.getOwnPropertySymbols(renderer)[0]] as IBaseRendererInstance;
 };
