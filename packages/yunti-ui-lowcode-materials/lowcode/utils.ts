@@ -1,5 +1,7 @@
 import { IPublicTypeFieldConfig } from '@alilc/lowcode-types';
 
+import { CLASS_NAME_PROP } from '../../shared/src/setters';
+
 // 获取组件优先级
 export const getPriority = (componentName: string) => {
   const priorities = {};
@@ -21,11 +23,7 @@ export const COMMON_CONFIGURE_PROPS: IPublicTypeFieldConfig[] = [
         title: { label: '唯一 id', tip: 'id' },
         setter: [{ componentName: 'StringSetter' }],
       },
-      {
-        name: 'className',
-        title: { label: '类名', tip: '自定义样式类名' },
-        setter: [{ componentName: 'StringSetter' }],
-      },
+      CLASS_NAME_PROP,
     ],
   },
 ];

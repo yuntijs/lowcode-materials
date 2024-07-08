@@ -135,3 +135,25 @@ export const Setters = {
     componentName: 'ObjectSetter',
   },
 };
+
+export const CLASS_NAME_PROP = {
+  name: 'className',
+  title: { label: '类名', tip: '自定义样式类名' },
+  setter: { componentName: 'StringSetter' },
+};
+
+export const STYLE_PROP = {
+  name: 'style',
+  title: { label: '样式', tip: '自定义样式' },
+  setter: { componentName: 'StyleSetter' },
+};
+
+export const STYLE_ONLY_CSS_CODE_PROP = {
+  ...STYLE_PROP,
+  setter: {
+    ...STYLE_PROP.setter,
+    props: {
+      showModuleList: [],
+    },
+  },
+};

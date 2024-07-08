@@ -4,8 +4,8 @@ import { COMMON_CONFIGURE_PROPS } from '../utils';
 import { AutoCompleteSnippets } from './snippets';
 
 const AutoCompleteMetaInfo: IPublicTypeComponentMetadata = {
-  componentName: '自动完成(AutoComplete)',
-  title: 'AutoComplete',
+  componentName: 'AutoComplete',
+  title: '自动完成(AutoComplete)',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',

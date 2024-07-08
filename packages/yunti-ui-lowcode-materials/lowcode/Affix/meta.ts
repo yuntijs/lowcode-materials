@@ -6,6 +6,7 @@ import { AffixSnippets } from './snippets';
 const AffixMetaInfo: IPublicTypeComponentMetadata = {
   componentName: 'Affix',
   title: 'Affix',
+  category: '其他',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',
@@ -117,7 +118,6 @@ const AffixMetaInfo: IPublicTypeComponentMetadata = {
     },
     component: {},
   },
-  category: '其他',
 };
 
 export const AffixMeta = {
