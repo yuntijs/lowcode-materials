@@ -2,6 +2,31 @@
 
 # Changelog
 
+### [Version 1.8.1](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.8.0...@yuntijs/ui-lowcode-materials@1.8.1)
+
+<sup>Released on **2024-07-08**</sup>
+
+#### 🐛 Bug Fixes
+
+- **yunti-ui**: Add initialValue for sdkSwrFuncs.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **yunti-ui**: Add initialValue for sdkSwrFuncs ([20c4107](https://github.com/yuntijs/lowcode-materials/commit/20c4107))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.8.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.7.0...@yuntijs/ui-lowcode-materials@1.8.0)
 
 <sup>Released on **2024-07-08**</sup>
