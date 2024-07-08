@@ -11,15 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js v18.x
+      - name: Setup Node.js v20.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
-      - name: Install pnpm v8.x
+      - name: Install pnpm v9.x
         uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 9
 
       - name: Install deps
         run: pnpm i
