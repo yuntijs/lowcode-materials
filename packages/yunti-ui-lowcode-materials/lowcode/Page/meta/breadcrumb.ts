@@ -71,32 +71,6 @@ export const PageBreadcrumbMeta: IPublicTypeComponentMetadata = {
               },
             },
           },
-          {
-            name: 'subTitle',
-            title: {
-              label: '副标题',
-              tip: '副标题或描述',
-            },
-            defaultValue: '我是副标题',
-            setter: Setters.StringSetter,
-          },
-          {
-            name: 'bordered',
-            title: {
-              label: '边框',
-            },
-            defaultValue: false,
-            setter: Setters.BoolSetter,
-          },
-          {
-            name: 'divider',
-            title: {
-              label: '分割线',
-              tip: '控制 header 与 content 的分割线，当 bordered 为 true 时，divider 自动设置为 false',
-            },
-            defaultValue: true,
-            setter: Setters.BoolSetter,
-          },
         ],
       },
       {

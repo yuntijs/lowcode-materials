@@ -37,6 +37,7 @@ export const PageMeta: IPublicTypeComponentMetadata = {
               props: {
                 itemSetter: {
                   ...Setters.ObjectSetter,
+                  initialValue: {},
                   props: {
                     config: {
                       items: [

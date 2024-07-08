@@ -199,8 +199,8 @@ importers:
         version: 17.0.2(react@17.0.2)
     devDependencies:
       '@yuntijs/ui':
-        specifier: 1.0.0-beta.35
-        version: 1.0.0-beta.35(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(dayjs@1.11.11)(monaco-editor@0.44.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(yjs@13.6.18)
+        specifier: 1.0.0-beta.36
+        version: 1.0.0-beta.36(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(dayjs@1.11.11)(monaco-editor@0.44.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(yjs@13.6.18)
 
 packages:
 
@@ -3417,8 +3417,8 @@ packages:
       eslint: '>=8.42'
       prettier: '>=3'
 
-  '@yuntijs/ui@1.0.0-beta.35':
-    resolution: {integrity: sha512-JHsh6AdtT8jbNq8XwG2ng6wsw5ky+wJSTGGDS4pS6eJ1R+3+yu1Usfj8/heVfcixi752krc87lafTj+5qXbNig==}
+  '@yuntijs/ui@1.0.0-beta.36':
+    resolution: {integrity: sha512-KR0KEUOtzQr3tHI5+8hQjGBjKXH7mwASU1vN3JNCfraZaxmAvzeKafHUKbSlpWD2zCcEstEk6Wu5VC/S0Z+raQ==}
     engines: {node: '>=18.12.0', pnpm: '>=8.1.0'}
     peerDependencies:
       antd: '>=5'
@@ -7217,8 +7217,8 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  lucide-react@0.401.0:
-    resolution: {integrity: sha512-4HijVZoWBe8BfLNbXyLH8ZZI4XUj/YeGWaHHjEe0/49L5Qw4pVA+HvZrvJH8ekNxz2nLvoDlfsJVOBNgBs9Bug==}
+  lucide-react@0.402.0:
+    resolution: {integrity: sha512-V2ModWMXzoZbQy4dhVUY4snrOplw+DwH0tsr8SLf8N0+irwO5okFcMS4eFHrXHttt24sLFZP3IJQo832o3fUWQ==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -14402,7 +14402,7 @@ snapshots:
 
   '@lobehub/emojilib@1.0.0': {}
 
-  '@lobehub/ui@1.146.4(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(lucide-react@0.401.0(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@lobehub/ui@1.146.4(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(lucide-react@0.402.0(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       '@babel/runtime': 7.24.7
       '@dnd-kit/core': 6.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -14428,7 +14428,7 @@ snapshots:
       immer: 10.1.1
       leva: 0.9.35(@types/react-dom@17.0.22)(@types/react@18.2.33)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       lodash-es: 4.17.21
-      lucide-react: 0.401.0(react@17.0.2)
+      lucide-react: 0.402.0(react@17.0.2)
       numeral: 2.0.6
       polished: 4.3.1
       prism-react-renderer: 2.3.1(react@17.0.2)
@@ -16582,7 +16582,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yuntijs/ui@1.0.0-beta.35(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(dayjs@1.11.11)(monaco-editor@0.44.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(yjs@13.6.18)':
+  '@yuntijs/ui@1.0.0-beta.36(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(dayjs@1.11.11)(monaco-editor@0.44.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(yjs@13.6.18)':
     dependencies:
       '@alilc/lowcode-plugin-base-monaco-editor': 1.1.2(monaco-editor@0.44.0)
       '@ant-design/icons': 5.2.6(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -16591,14 +16591,14 @@ snapshots:
       '@lexical/selection': 0.16.1
       '@lexical/text': 0.16.1
       '@lexical/utils': 0.16.1
-      '@lobehub/ui': 1.146.4(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(lucide-react@0.401.0(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@lobehub/ui': 1.146.4(@types/react-dom@17.0.22)(@types/react@18.2.33)(ahooks@3.7.8(react@17.0.2))(antd-style@3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(lucide-react@0.402.0(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       antd: 5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       antd-style: 3.6.1(@types/react@18.2.33)(antd@5.12.6(date-fns@2.30.0)(moment@2.30.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       dayjs: 1.11.11
       leva: 0.9.35(@types/react-dom@17.0.22)(@types/react@18.2.33)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       lexical: 0.16.1
       lodash-es: 4.17.21
-      lucide-react: 0.401.0(react@17.0.2)
+      lucide-react: 0.402.0(react@17.0.2)
       query-string: 8.1.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -21427,7 +21427,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  lucide-react@0.401.0(react@17.0.2):
+  lucide-react@0.402.0(react@17.0.2):
     dependencies:
       react: 17.0.2
 
@@ -24774,7 +24774,7 @@ snapshots:
 
   regenerator-transform@0.15.2:
     dependencies:
-      '@babel/runtime': 7.23.7
+      '@babel/runtime': 7.24.7
 
   regex-not@1.0.2:
     dependencies:
