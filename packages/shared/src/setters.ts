@@ -11,6 +11,12 @@ export const Setters = {
     componentName: 'StringSetter',
   },
   /**
+   * 国际化文本设置器，不可换行
+   */
+  I18nSetter: {
+    componentName: 'I18nSetter',
+  },
+  /**
    * 数值型数据设置器
    */
   NumberSetter: {

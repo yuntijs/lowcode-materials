@@ -16,7 +16,7 @@ const REACT_SCRTPS = {
 const LOW_CODE_HEAD_SCRIPTS = [
   'https://g.alicdn.com/mylib/moment/2.24.0/min/moment.min.js',
   'https://g.alicdn.com/code/lib/alifd__next/1.26.8/next.min.js',
-  'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.2.5/dist/js/engine-core.js',
+  'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.3.2/dist/js/engine-core.js',
   'https://alifd.alicdn.com/npm/@alilc/lowcode-engine-ext@1.0.6/dist/js/engine-ext.js',
 ];
 
@@ -34,7 +34,7 @@ const LOW_CODE_LINKS = [
     rel: 'stylesheet',
   },
   {
-    href: 'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.2.5/dist/css/engine-core.css',
+    href: 'https://alifd.alicdn.com/npm/@alilc/lowcode-engine@1.3.2/dist/css/engine-core.css',
     rel: 'stylesheet',
   },
   {

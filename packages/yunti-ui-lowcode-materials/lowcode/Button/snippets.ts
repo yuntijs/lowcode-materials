@@ -9,10 +9,6 @@ export const ButtonSnippets: IPublicTypeSnippet[] = [
         __component_name: 'Button',
         type: 'primary',
         children: '创建',
-        icon: {
-          type: 'JSSlot',
-          value: [],
-        },
       },
     },
   },
@@ -23,24 +19,17 @@ export const ButtonSnippets: IPublicTypeSnippet[] = [
       props: {
         __component_name: 'Button',
         children: '刷新',
-        icon: {
-          type: 'JSSlot',
-          value: [],
-        },
       },
     },
   },
   {
-    title: '删除按钮',
+    title: '危险按钮',
     schema: {
       componentName: 'Button',
       props: {
         __component_name: 'Button',
-        type: 'dashed',
-        icon: {
-          type: 'JSSlot',
-          value: [],
-        },
+        danger: true,
+        children: '删除',
       },
     },
   },

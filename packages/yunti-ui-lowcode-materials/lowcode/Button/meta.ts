@@ -1,13 +1,16 @@
 import { IPublicTypeComponentMetadata } from '@alilc/lowcode-types';
 
-import { COMMON_CONFIGURE_PROPS } from '../utils';
+import { Setters } from '../../../shared/src/setters';
+import { COMMON_CONFIGURE_PROPS, getPriority } from '../utils';
 import { ButtonSnippets } from './snippets';
 
-const ButtonMetaInfo: IPublicTypeComponentMetadata = {
+export const ButtonMeta: IPublicTypeComponentMetadata = {
   componentName: 'Button',
   title: 'Button',
   docUrl: '',
   screenshot: '',
+  snippets: ButtonSnippets,
+  priority: getPriority('Button'),
   devMode: 'proCode',
   npm: {
     package: '@yuntijs/ui-lowcode-materials',
@@ -20,468 +23,288 @@ const ButtonMetaInfo: IPublicTypeComponentMetadata = {
     props: [
       ...COMMON_CONFIGURE_PROPS,
       {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'href',
-            'zh-CN': '跳转的地址',
+        title: '常用配置',
+        display: 'block',
+        type: 'group',
+        items: [
+          {
+            name: 'children',
+            title: {
+              label: '内容',
+              tip: 'children | 内容',
+            },
+            setter: Setters.SlotSetter,
+            // setter: [
+            //   Setters.I18nSetter,
+            //   Setters.StringSetter,
+            //   Setters.SlotSetter,
+            // ],
           },
-        },
-        name: 'href',
-        setter: {
-          componentName: 'StringSetter',
-          isRequired: false,
-          initialValue: '',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'htmlType',
-            'zh-CN': '原生 type 值',
-          },
-        },
-        name: 'htmlType',
-        setter: {
-          componentName: 'RadioGroupSetter',
-          props: {
-            dataSource: [
-              {
-                label: 'submit',
-                value: 'submit',
-              },
-              {
-                label: 'reset',
-                value: 'reset',
-              },
-              {
-                label: 'button',
-                value: 'button',
-              },
-            ],
-            options: [
-              {
-                label: 'submit',
-                value: 'submit',
-              },
-              {
-                label: 'reset',
-                value: 'reset',
-              },
-              {
-                label: 'button',
-                value: 'button',
-              },
-            ],
-          },
-          initialValue: 'submit',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'type',
-            'zh-CN': '类型',
-          },
-        },
-        name: 'type',
-        setter: {
-          componentName: 'SelectSetter',
-          props: {
-            dataSource: [
-              {
-                label: 'link',
-                value: 'link',
-              },
-              {
-                label: 'text',
-                value: 'text',
-              },
-              {
-                label: 'default',
-                value: 'default',
-              },
-              {
-                label: 'primary',
-                value: 'primary',
-              },
-              {
-                label: 'dashed',
-                value: 'dashed',
-              },
-            ],
-            options: [
-              {
-                label: 'link',
-                value: 'link',
-              },
-              {
-                label: 'text',
-                value: 'text',
-              },
-              {
-                label: 'default',
-                value: 'default',
-              },
-              {
-                label: 'primary',
-                value: 'primary',
-              },
-              {
-                label: 'dashed',
-                value: 'dashed',
-              },
-            ],
-          },
-          initialValue: 'link',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'icon',
-            'zh-CN': '图标',
-          },
-        },
-        name: 'icon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node',
-          },
-          isRequired: false,
-          initialValue: {
-            type: 'JSSlot',
-            value: [],
-          },
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'shape',
-            'zh-CN': '形状',
-          },
-        },
-        name: 'shape',
-        setter: {
-          componentName: 'RadioGroupSetter',
-          props: {
-            dataSource: [
-              {
-                label: 'circle',
-                value: 'circle',
-              },
-              {
-                label: 'default',
-                value: 'default',
-              },
-              {
-                label: 'round',
-                value: 'round',
-              },
-            ],
-            options: [
-              {
-                label: 'circle',
-                value: 'circle',
-              },
-              {
-                label: 'default',
-                value: 'default',
-              },
-              {
-                label: 'round',
-                value: 'round',
-              },
-            ],
-          },
-          initialValue: 'default',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'size',
-            'zh-CN': '大小',
-          },
-        },
-        name: 'size',
-        setter: {
-          componentName: 'RadioGroupSetter',
-          props: {
-            dataSource: [
-              {
-                label: 'small',
-                value: 'small',
-              },
-              {
-                label: 'middle',
-                value: 'middle',
-              },
-              {
-                label: 'large',
-                value: 'large',
-              },
-            ],
-            options: [
-              {
-                label: 'small',
-                value: 'small',
-              },
-              {
-                label: 'middle',
-                value: 'middle',
-              },
-              {
-                label: 'large',
-                value: 'large',
-              },
-            ],
-          },
-          initialValue: 'small',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'disabled',
-            'zh-CN': '禁用',
-          },
-        },
-        name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          isRequired: false,
-          initialValue: false,
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'loading',
-            'zh-CN': '加载中',
-          },
-        },
-        name: 'loading',
-        setter: {
-          componentName: 'MixedSetter',
-          props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                isRequired: false,
-                initialValue: false,
-              },
-            ],
-          },
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'prefixCls',
-            'zh-CN': 'prefixCls',
-          },
-        },
-        name: 'prefixCls',
-        setter: {
-          componentName: 'StringSetter',
-          isRequired: false,
-          initialValue: '',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'rootClassName',
-            'zh-CN': 'rootClassName',
-          },
-        },
-        name: 'rootClassName',
-        setter: {
-          componentName: 'StringSetter',
-          isRequired: false,
-          initialValue: '',
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'ghost',
-            'zh-CN': '幽灵属性',
-          },
-        },
-        name: 'ghost',
-        setter: {
-          componentName: 'BoolSetter',
-          isRequired: false,
-          initialValue: false,
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'danger',
-            'zh-CN': '危险',
-          },
-        },
-        name: 'danger',
-        setter: {
-          componentName: 'BoolSetter',
-          isRequired: false,
-          initialValue: false,
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'block',
-            'zh-CN': '按钮宽度调整为其父宽度的选项',
-          },
-        },
-        name: 'block',
-        setter: {
-          componentName: 'BoolSetter',
-          isRequired: false,
-          initialValue: false,
-        },
-      },
-      {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'target',
-            'zh-CN': '相当于 a 链接的 target 属性，href 存在时生效',
-          },
-        },
-        name: 'target',
-        setter: {
-          componentName: 'MixedSetter',
-          props: {
-            setters: [
-              {
-                componentName: 'ObjectSetter',
-                props: {
-                  config: {
-                    extraSetter: {
-                      componentName: 'MixedSetter',
-                      isRequired: false,
-                      props: {},
-                    },
+          {
+            name: 'type',
+            title: { label: '类型', tip: 'type | 设置按钮类型' },
+            setter: {
+              ...Setters.SelectSetter,
+              props: {
+                options: [
+                  {
+                    title: '默认',
+                    value: 'default',
                   },
-                },
-                isRequired: false,
-                initialValue: {},
+                  {
+                    title: '主按钮',
+                    value: 'primary',
+                  },
+                  {
+                    title: '链接按钮',
+                    value: 'link',
+                  },
+                  {
+                    title: '类文本按钮',
+                    value: 'text',
+                  },
+                  {
+                    title: '虚线框按钮',
+                    value: 'dashed',
+                  },
+                ],
               },
-              {
-                componentName: 'SelectSetter',
-                props: {
-                  dataSource: [
-                    {
-                      label: '_self',
-                      value: '_self',
-                    },
-                    {
-                      label: '_blank',
-                      value: '_blank',
-                    },
-                    {
-                      label: '_parent',
-                      value: '_parent',
-                    },
-                    {
-                      label: '_top',
-                      value: '_top',
-                    },
-                  ],
-                  options: [
-                    {
-                      label: '_self',
-                      value: '_self',
-                    },
-                    {
-                      label: '_blank',
-                      value: '_blank',
-                    },
-                    {
-                      label: '_parent',
-                      value: '_parent',
-                    },
-                    {
-                      label: '_top',
-                      value: '_top',
-                    },
-                  ],
-                },
-                initialValue: '_self',
-              },
-            ],
+            },
           },
-        },
+          {
+            name: 'href',
+            title: {
+              label: '跳转地址',
+              tip: 'href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致',
+            },
+            setter: Setters.StringSetter,
+          },
+          {
+            name: 'target',
+            title: {
+              label: 'Target',
+              tip: 'target | 相当于 a 链接的 target 属性，href 存在时生效',
+            },
+            setter: Setters.StringSetter,
+            // setter: [
+            //   {
+            //     ...Setters.SelectSetter,
+            //     props: {
+            //       options: [
+            //         {
+            //           title: '本窗口跳转',
+            //           value: '_self'
+            //         },
+            //         {
+            //           title: '打开新标签页',
+            //           value: '_blank'
+            //         },
+            //         {
+            //           title: '父窗口跳转',
+            //           value: '_parent'
+            //         },
+            //         {
+            //           title: '顶层窗口跳转',
+            //           value: '_top'
+            //         }
+            //       ]
+            //     }
+            //   },
+            //   Setters.StringSetter,
+            // ],
+            condition: target => !!target.parent.getPropValue('href')?.trim(),
+          },
+          {
+            name: 'danger',
+            title: { label: '危险按钮', tip: 'danger | 设置危险按钮' },
+            setter: Setters.BoolSetter,
+            defaultValue: false,
+          },
+          {
+            name: 'ghost',
+            title: { label: '幽灵属性', tip: 'ghost | 幽灵属性，使按钮背景透明' },
+            setter: Setters.BoolSetter,
+            defaultValue: false,
+          },
+          {
+            name: 'hoverColor',
+            title: { label: 'hoverColor', tip: '鼠标移上颜色' },
+            setter: {
+              ...Setters.SelectSetter,
+              props: {
+                options: [
+                  {
+                    title: '默认',
+                    value: 'default',
+                  },
+                  {
+                    title: '主按钮',
+                    value: 'primary',
+                  },
+                ],
+              },
+            },
+          },
+          {
+            name: 'size',
+            title: { label: '尺寸', tip: 'size | 设置按钮大小' },
+            setter: {
+              ...Setters.RadioGroupSetter,
+              props: {
+                options: [
+                  {
+                    title: '大',
+                    value: 'large',
+                  },
+                  {
+                    title: '中',
+                    value: 'middle',
+                  },
+                  {
+                    title: '小',
+                    value: 'small',
+                  },
+                ],
+              },
+            },
+          },
+          {
+            name: 'shape',
+            title: {
+              label: '形状',
+              tip: 'shape | 设置按钮形状，可选值为 `circle`、 `round` 或者不设',
+            },
+            defaultValue: 'default',
+            setter: {
+              ...Setters.RadioGroupSetter,
+              props: {
+                options: [
+                  {
+                    title: '默认',
+                    value: 'default',
+                  },
+                  {
+                    title: '圆形',
+                    value: 'circle',
+                  },
+                  {
+                    title: '圆角',
+                    value: 'round',
+                  },
+                ],
+              },
+            },
+          },
+          {
+            name: 'icon',
+            title: { label: '图标', tip: 'icon | 设置按钮的图标组件' },
+            setter: Setters.SlotSetter,
+          },
+          {
+            name: 'block',
+            title: {
+              label: '自适应',
+              tip: 'block | 将按钮宽度调整为其父宽度的选项',
+            },
+            setter: Setters.BoolSetter,
+          },
+        ],
       },
       {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'autoInsertSpace',
-            'zh-CN': '汉字之间有空格',
+        title: '状态',
+        display: 'block',
+        type: 'group',
+        items: [
+          {
+            name: 'loading',
+            title: { label: '载入状态', tip: 'loading | 设置按钮载入状态' },
+            setter: Setters.BoolSetter,
           },
-        },
-        name: 'autoInsertSpace',
-        setter: {
-          componentName: 'BoolSetter',
-          isRequired: false,
-          initialValue: true,
-        },
+          {
+            name: 'disabled',
+            title: { label: '是否禁用', tip: 'disabled | 是否为禁用状态' },
+            setter: Setters.BoolSetter,
+          },
+        ],
       },
       {
-        title: {
-          label: {
-            'type': 'i18n',
-            'en-US': 'iconPosition',
-            'zh-CN': '图标位置',
+        title: '高级配置',
+        display: 'block',
+        type: 'group',
+        items: [
+          {
+            name: 'htmlType',
+            title: {
+              label: {
+                'type': 'i18n',
+                'en-US': 'htmlType',
+                'zh-CN': '原生 type 值',
+              },
+            },
+            setter: {
+              ...Setters.RadioGroupSetter,
+              props: {
+                options: [
+                  {
+                    label: 'button',
+                    value: 'button',
+                  },
+                  {
+                    label: 'submit',
+                    value: 'submit',
+                  },
+                  {
+                    label: 'reset',
+                    value: 'reset',
+                  },
+                ],
+              },
+              initialValue: 'button',
+            },
           },
-        },
-        name: 'iconPosition',
-        setter: {
-          componentName: 'RadioGroupSetter',
-          props: {
-            dataSource: [
-              {
-                label: 'start',
-                value: 'start',
+          {
+            title: {
+              label: {
+                'type': 'i18n',
+                'en-US': 'autoInsertSpace',
+                'zh-CN': '两个汉字之间的空格',
               },
-              {
-                label: 'end',
-                value: 'end',
-              },
-            ],
-            options: [
-              {
-                label: 'start',
-                value: 'start',
-              },
-              {
-                label: 'end',
-                value: 'end',
-              },
-            ],
+            },
+            name: 'autoInsertSpace',
+            setter: {
+              ...Setters.BoolSetter,
+              isRequired: false,
+              initialValue: true,
+            },
           },
-          initialValue: 'start',
-        },
+          {
+            title: {
+              label: {
+                'type': 'i18n',
+                'en-US': 'icon position',
+                'zh-CN': '图标位置',
+              },
+            },
+            name: 'iconPosition',
+            setter: {
+              ...Setters.RadioGroupSetter,
+              props: {
+                options: [
+                  {
+                    label: 'start',
+                    value: 'start',
+                  },
+                  {
+                    label: 'end',
+                    value: 'end',
+                  },
+                ],
+              },
+              initialValue: 'start',
+            },
+            condition: target => !!target.parent.getPropValue('icon')?.value,
+          },
+        ],
       },
     ],
     supports: {
@@ -500,9 +323,4 @@ const ButtonMetaInfo: IPublicTypeComponentMetadata = {
     component: {},
   },
   category: '通用',
-};
-
-export const ButtonMeta = {
-  ...ButtonMetaInfo,
-  snippets: ButtonSnippets,
 };

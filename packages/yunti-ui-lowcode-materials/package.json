@@ -25,10 +25,16 @@
     "@babel/runtime": "^7.0.0"
   },
   "devDependencies": {
-    "@yuntijs/ui": "1.0.0-beta.36"
+    "@yuntijs/ui": "1.0.0-beta.36",
+    "antd": "^5.19.0",
+    "antd-style": "^3",
+    "dayjs": "^1"
   },
   "peerDependencies": {
     "@yuntijs/ui": "*",
+    "antd": ">=5",
+    "antd-style": ">=3",
+    "dayjs": ">=1",
     "lodash": "^4.17.21",
     "moment": "latest",
     "react": "16.x || 17.x",
