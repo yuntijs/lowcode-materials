@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [Version 1.3.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/lowcode-materials-shared@1.2.0...@yuntijs/lowcode-materials-shared@1.3.0)
+
+<sup>Released on **2024-07-09**</sup>
+
+#### ✨ Features
+
+- **yunti-ui**: Change Button design view.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **yunti-ui**: Change Button design view ([8f13194](https://github.com/yuntijs/lowcode-materials/commit/8f13194))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.2.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/lowcode-materials-shared@1.1.0...@yuntijs/lowcode-materials-shared@1.2.0)
 
 <sup>Released on **2024-07-08**</sup>
