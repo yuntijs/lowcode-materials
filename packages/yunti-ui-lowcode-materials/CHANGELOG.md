@@ -2,6 +2,33 @@
 
 # Changelog
 
+## [Version 1.10.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.9.0...@yuntijs/ui-lowcode-materials@1.10.0)
+
+<sup>Released on **2024-07-12**</sup>
+
+#### ✨ Features
+
+- **yunti-ui**: Add Page.Title, add ProCard, remove hoverColor of Button.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **yunti-ui**: Add Page.Title ([af0013d](https://github.com/yuntijs/lowcode-materials/commit/af0013d))
+- **yunti-ui**: Add ProCard ([fdd941d](https://github.com/yuntijs/lowcode-materials/commit/fdd941d))
+- **yunti-ui**: Remove hoverColor of Button ([a2fe17b](https://github.com/yuntijs/lowcode-materials/commit/a2fe17b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.9.0](https://github.com/yuntijs/lowcode-materials/compare/@yuntijs/ui-lowcode-materials@1.8.1...@yuntijs/ui-lowcode-materials@1.9.0)
 
 <sup>Released on **2024-07-09**</sup>
