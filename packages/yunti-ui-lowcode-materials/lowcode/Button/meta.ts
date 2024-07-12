@@ -127,25 +127,6 @@ export const ButtonMeta: IPublicTypeComponentMetadata = {
             defaultValue: false,
           },
           {
-            name: 'hoverColor',
-            title: { label: 'hoverColor', tip: '鼠标移上颜色' },
-            setter: {
-              ...Setters.SelectSetter,
-              props: {
-                options: [
-                  {
-                    title: '默认',
-                    value: 'default',
-                  },
-                  {
-                    title: '主按钮',
-                    value: 'primary',
-                  },
-                ],
-              },
-            },
-          },
-          {
             name: 'size',
             title: { label: '尺寸', tip: 'size | 设置按钮大小' },
             setter: {
