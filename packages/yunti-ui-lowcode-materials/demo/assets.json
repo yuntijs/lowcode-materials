@@ -23,8 +23,8 @@
       "id": "antd",
       "meta": {},
       "urls": [
-        "https://jsd.onmicrosoft.cn/npm/antd@5.9.4/dist/antd.min.js",
-        "https://jsd.onmicrosoft.cn/npm/antd@5.9.4/dist/reset.min.css"
+        "http://dev-unpkg.tenxcloud.net/antd@5.19.1/dist/antd.min.js",
+        "http://dev-unpkg.tenxcloud.net/antd@5.19.1/dist/reset.css"
       ],
       "library": "antd",
       "package": "antd",
@@ -58,7 +58,7 @@
     {
       "id": "lodash",
       "meta": null,
-      "urls": ["https://jsd.onmicrosoft.cn/npm/lodash@4.17.21/lodash.min.js"],
+      "urls": ["http://dev-unpkg.tenxcloud.net/lodash@4.17.21/lodash.min.js"],
       "library": "_",
       "package": "lodash",
       "version": "4.17.21",

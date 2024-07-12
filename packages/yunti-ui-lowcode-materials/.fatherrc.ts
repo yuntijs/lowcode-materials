@@ -8,6 +8,8 @@ const library = 'YuntiUiLowcode';
 const externals = {
   react: 'var window.React',
   lodash: 'var window._',
+  antd: 'var window.antd',
+  dayjs: 'var window.dayjs',
   // @todo: 增加以下 externals 避免 'VERSION_PLACEHOLDER is not defined' 错误
   // '@alifd/next': 'var window.Next',
   // '@alilc/lowcode-engine': 'var window.AliLowCodeEngine',
