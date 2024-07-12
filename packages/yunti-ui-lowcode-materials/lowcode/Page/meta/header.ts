@@ -162,7 +162,7 @@ export const PageHeaderMeta: IPublicTypeComponentMetadata = {
                           title: {
                             label: '文本描述',
                           },
-                          isRequied: true,
+                          isRequired: true,
                           defaultValue: '文本描述',
                           setter: {
                             ...Setters.MixedSetter,

@@ -9,6 +9,7 @@ export {
   MonacoDiffEditor,
   MonacoEditor,
   Page,
+  ProCard,
   SliderInput,
   Tree,
 } from '@yuntijs/ui';

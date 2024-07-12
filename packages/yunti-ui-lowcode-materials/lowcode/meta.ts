@@ -14,6 +14,12 @@ import {
   PageMeta,
   PageTitleMeta,
 } from './Page/meta';
+import {
+  ProCardContentMeta,
+  ProCardDescriptionsMeta,
+  ProCardHeaderMeta,
+  ProCardMeta,
+} from './ProCard/meta';
 import { SliderInputMeta } from './SliderInput/meta';
 import { TreeMeta } from './Tree/meta';
 
@@ -23,6 +29,10 @@ const components = [
   PageBreadcrumbMeta,
   PageHeaderMeta,
   PageContentMeta,
+  ProCardMeta,
+  ProCardHeaderMeta,
+  ProCardContentMeta,
+  ProCardDescriptionsMeta,
   TreeMeta,
   MonacoEditorMeta,
   MonacoDiffEditorMeta,
