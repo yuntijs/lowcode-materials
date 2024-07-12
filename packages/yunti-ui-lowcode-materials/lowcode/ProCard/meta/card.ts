@@ -51,7 +51,14 @@ export const ProCardMeta: IPublicTypeComponentMetadata = {
       loop: false,
       condition: true,
       style: true,
-      events: [],
+      events: [
+        {
+          name: 'onClick',
+          description: '点击卡片时的回调',
+          template:
+            "onClick(e, ${extParams}){\n    // 点击卡片时的回调 \n    console.log('onChange', e);\n  }\n",
+        },
+      ],
     },
     component: {
       isContainer: true,
