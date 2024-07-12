@@ -1,5 +1,19 @@
 import { IPublicTypeSnippet } from '@alilc/lowcode-types';
 
+export const PageTitleSnippets: IPublicTypeSnippet[] = [
+  {
+    title: '页面标题',
+    screenshot: '',
+    schema: {
+      componentName: 'Page.Title',
+      props: {
+        __component_name: 'Page.Title',
+        children: '页面标题',
+      },
+    },
+  },
+];
+
 export const PageBreadcrumbSnippets: IPublicTypeSnippet[] = [
   {
     title: '详情页面包屑',
@@ -92,6 +106,22 @@ export const PageContentSnippets: IPublicTypeSnippet[] = [
 ];
 
 export const PageSnippets: IPublicTypeSnippet[] = [
+  {
+    title: '列表页',
+    screenshot: '',
+    schema: {
+      componentName: 'Page',
+      props: {
+        __component_name: 'Page',
+        loading: false,
+        gap: 16,
+        children: {
+          type: 'JSSlot',
+          value: [PageTitleSnippets[0].schema, PageContentSnippets[0].schema],
+        },
+      },
+    },
+  },
   {
     title: '详情页',
     screenshot: '',

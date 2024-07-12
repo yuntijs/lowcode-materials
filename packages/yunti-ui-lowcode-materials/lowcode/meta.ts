@@ -7,12 +7,19 @@ import { AutoCompleteMeta } from './AutoComplete/meta';
 import { AvatarMeta } from './Avatar/meta';
 import { ButtonMeta } from './Button/meta';
 import { MonacoDiffEditorMeta, MonacoEditorMeta } from './MonacoEditor/meta';
-import { PageBreadcrumbMeta, PageContentMeta, PageHeaderMeta, PageMeta } from './Page/meta';
+import {
+  PageBreadcrumbMeta,
+  PageContentMeta,
+  PageHeaderMeta,
+  PageMeta,
+  PageTitleMeta,
+} from './Page/meta';
 import { SliderInputMeta } from './SliderInput/meta';
 import { TreeMeta } from './Tree/meta';
 
 const components = [
   PageMeta,
+  PageTitleMeta,
   PageBreadcrumbMeta,
   PageHeaderMeta,
   PageContentMeta,
