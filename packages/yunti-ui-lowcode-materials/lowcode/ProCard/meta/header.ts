@@ -33,7 +33,7 @@ export const ProCardHeaderMeta: IPublicTypeComponentMetadata = {
               label: '标题',
             },
             defaultValue: '我是卡片标题',
-            setter: Setters.StringSetter,
+            setter: [Setters.StringSetter, Setters.SlotSetter],
           },
           {
             name: 'description',
@@ -41,7 +41,7 @@ export const ProCardHeaderMeta: IPublicTypeComponentMetadata = {
               label: '描述',
             },
             defaultValue: '我是描述',
-            setter: Setters.StringSetter,
+            setter: [Setters.StringSetter, Setters.SlotSetter],
           },
           {
             name: 'divider',
